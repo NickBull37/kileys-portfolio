@@ -26,7 +26,8 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
         >
             <AppBar position="static" elevation={8}
                 sx={{
-                    backgroundColor: '#080808'
+                    // backgroundColor: '#080808'
+                    backgroundColor: darkModeEnabled ? colors.navBarDarkBg : colors.lightModeBase,
                 }}
             >
                 <Container maxWidth="xl">
@@ -57,7 +58,11 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 onClick={handleOpenNavMenu}
                                 color="inherit"
                             >
-                                <MenuIcon />
+                                <MenuIcon
+                                    sx={{
+                                        color: darkModeEnabled ? colors.white : colors.black,
+                                    }}
+                                />
                             </IconButton>
                             <Menu
                                 id="menu-appbar"

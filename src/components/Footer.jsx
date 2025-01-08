@@ -30,8 +30,8 @@ const Footer = ({ darkModeEnabled }) => {
                     <Typography
                         variant='body2'
                         sx={{
-                            color: '#cccccc',
-                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                            color: darkModeEnabled ? colors.white : colors.black,
+                            borderBottom: { xs: '1px solid #808080', md: 'none' }
                         }}
                     >
                         Home
@@ -47,7 +47,7 @@ const Footer = ({ darkModeEnabled }) => {
                     <Typography
                         variant='body2'
                         sx={{
-                            color: '#cccccc',
+                            color: darkModeEnabled ? colors.white : colors.black,
                             borderBottom: { xs: '1px solid #cccccc', md: 'none' }
                         }}
                     >
@@ -64,7 +64,7 @@ const Footer = ({ darkModeEnabled }) => {
                     <Typography
                         variant='body2'
                         sx={{
-                            color: '#cccccc',
+                            color: darkModeEnabled ? colors.white : colors.black,
                             borderBottom: { xs: '1px solid #cccccc', md: 'none' }
                         }}
                     >
@@ -73,15 +73,15 @@ const Footer = ({ darkModeEnabled }) => {
                 </Link>
             </NavBtn>
             <NavBtn
-                sx={{
-                    color: darkModeEnabled ? colors.white : colors.black,
-                }}
+                // sx={{
+                //     color: darkModeEnabled ? colors.white : colors.black,
+                // }}
             >
                 <Link to="/contact">
                     <Typography
                         variant='body2'
                         sx={{
-                            color: '#cccccc',
+                            color: darkModeEnabled ? colors.white : colors.black,
                             borderBottom: { xs: '1px solid #cccccc', md: 'none' }
                         }}
                     >
