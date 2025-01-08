@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.cc1ed3b9.css",
-    "main.js": "/kileys-portfolio/static/js/main.abf67d77.js",
+    "main.css": "/kileys-portfolio/static/css/main.3b77ee85.css",
+    "main.js": "/kileys-portfolio/static/js/main.befb9a0b.js",
     "static/media/landing-bg.png": "/kileys-portfolio/static/media/landing-bg.c45860474acc2c7e7a6c.png",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/landing-bg2.png": "/kileys-portfolio/static/media/landing-bg2.f9c6731076e21c1b4ee7.png",
@@ -28,11 +28,11 @@
     "static/media/article11-preview.png": "/kileys-portfolio/static/media/article11-preview.46aa958ffdabd17412eb.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.cc1ed3b9.css.map": "/kileys-portfolio/static/css/main.cc1ed3b9.css.map",
-    "main.abf67d77.js.map": "/kileys-portfolio/static/js/main.abf67d77.js.map"
+    "main.3b77ee85.css.map": "/kileys-portfolio/static/css/main.3b77ee85.css.map",
+    "main.befb9a0b.js.map": "/kileys-portfolio/static/js/main.befb9a0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc1ed3b9.css",
-    "static/js/main.abf67d77.js"
+    "static/css/main.3b77ee85.css",
+    "static/js/main.befb9a0b.js"
   ]
 }
