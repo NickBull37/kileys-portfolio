@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { styled } from '@mui/material/styles';
-import { Box, Typography, Button, AppBar, Toolbar, Container, IconButton, Menu, MenuItem } from '@mui/material';
+import { Box, Typography, AppBar, Toolbar, Container, IconButton, Menu, MenuItem } from '@mui/material';
 import { ThemeToggle } from '../components/index';
 import MenuIcon from '@mui/icons-material/Menu';
 import colors from '../utils/colors';
@@ -32,17 +31,17 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
             >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        {/* <Typography
+                        <Typography
                             className='feel-free'
                             sx={{
                                 color: darkModeEnabled ? colors.white : colors.black,
                                 flexGrow: 1,
-                                fontSize: '2.75rem',
-                                ml: 4
+                                fontSize: '1.5rem',
+                                ml: 1
                             }}
                         >
                             KileyPrice.com
-                        </Typography> */}
+                        </Typography>
                         <Box
                             sx={{
                                 display: { xs: 'flex', md: 'none' },
@@ -79,24 +78,32 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 }}
                             >
                                 <MenuItem key={'home'} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">
-                                        <a href='/'>Home</a>
-                                    </Typography>
+                                    <Link to="/">
+                                        <Typography textAlign="center">
+                                            Home
+                                        </Typography>
+                                    </Link>
                                 </MenuItem>
                                 <MenuItem key={'about'} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">
-                                        <a href='/about-me'>About Me</a>
-                                    </Typography>
+                                    <Link to="/about-me">
+                                        <Typography textAlign="center">
+                                            About Me
+                                        </Typography>
+                                    </Link>
                                 </MenuItem>
                                 <MenuItem key={'written-work'} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">
-                                        <a href='/written-work'>Written Work</a>
-                                    </Typography>
+                                    <Link to="/written-work">
+                                        <Typography textAlign="center">
+                                            Written Work
+                                        </Typography>
+                                    </Link>
                                 </MenuItem>
                                 <MenuItem key={'contact'} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">
-                                        <a href='/contact'>Contact</a>
-                                    </Typography>
+                                    <Link to="/contact">
+                                        <Typography textAlign="center">
+                                            Contact
+                                        </Typography>
+                                    </Link>
                                 </MenuItem>
                                 <MenuItem key={'theme-toggle'}>
                                     <ThemeToggle darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />

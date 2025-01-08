@@ -21,7 +21,7 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
         <PageContainer className='bg-img'>
 
             <DesktopNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
-            <MobileNavbar />
+            <MobileNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
 
             {/* Contains Box for title bar and StyledPaper for intro */}
             <Stack
@@ -78,7 +78,7 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
                             py: { xs: 4, md: 2 },
-                            px: 2
+                            px: { xs: 4, md: 2 },
                         }}
                     >
                         <Box>

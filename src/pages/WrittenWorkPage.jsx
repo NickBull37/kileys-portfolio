@@ -118,7 +118,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 <Typography
                     sx={{
                         color: darkModeEnabled ? '#fff' : '#000',
-                        fontSize: { xs: '2rem', md: '3rem' },
+                        fontSize: { xs: '2.25rem', md: '3rem' },
                         fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
                         lineHeight: '1.167',
                         letterSpacing: '0em',
@@ -761,14 +761,14 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 sx={{
                     margin: 0,
                     px: { xs: 3, md: 38 },
-                    mt: 12,
+                    mt: 10,
                     mb: 3,
                 }}
             >
                 <Typography
                     sx={{
                         color: darkModeEnabled ? '#fff' : '#000',
-                        fontSize: { xs: '2rem', md: '3rem' },
+                        fontSize: { xs: '2.25rem', md: '3rem' },
                         fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
                         lineHeight: '1.167',
                         letterSpacing: '0em',

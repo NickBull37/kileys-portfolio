@@ -53,7 +53,7 @@ const Footer = ({ darkModeEnabled }) => {
                     color: darkModeEnabled ? colors.white : colors.black,
                 }}
             >
-                <Link to="#">
+                <Link to="/contact">
                     Contact
                 </Link>
             </NavBtn>
