@@ -36,7 +36,7 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             sx={{
                                 color: darkModeEnabled ? colors.white : colors.black,
                                 flexGrow: 1,
-                                fontSize: '1.5rem',
+                                fontSize: '1.875rem',
                                 ml: 1
                             }}
                         >

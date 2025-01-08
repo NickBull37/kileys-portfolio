@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
-import { Box, Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import colors from '../utils/colors';
 
 const NavBtn = styled(Button)(() => ({
@@ -27,7 +27,15 @@ const Footer = ({ darkModeEnabled }) => {
                 }}
             >
                 <Link to="/">
-                    Home
+                    <Typography
+                        variant='body2'
+                        sx={{
+                            color: '#cccccc',
+                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                        }}
+                    >
+                        Home
+                    </Typography>
                 </Link>
             </NavBtn>
             <NavBtn
@@ -36,7 +44,15 @@ const Footer = ({ darkModeEnabled }) => {
                 }}
             >
                 <Link to="/about-me">
-                    About Me
+                    <Typography
+                        variant='body2'
+                        sx={{
+                            color: '#cccccc',
+                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                        }}
+                    >
+                        About Me
+                    </Typography>
                 </Link>
             </NavBtn>
             <NavBtn
@@ -45,7 +61,15 @@ const Footer = ({ darkModeEnabled }) => {
                 }}
             >
                 <Link to="/written-work">
-                    Written Work
+                    <Typography
+                        variant='body2'
+                        sx={{
+                            color: '#cccccc',
+                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                        }}
+                    >
+                        Written Work
+                    </Typography>
                 </Link>
             </NavBtn>
             <NavBtn
@@ -54,7 +78,15 @@ const Footer = ({ darkModeEnabled }) => {
                 }}
             >
                 <Link to="/contact">
-                    Contact
+                    <Typography
+                        variant='body2'
+                        sx={{
+                            color: '#cccccc',
+                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                        }}
+                    >
+                        Contact
+                    </Typography>
                 </Link>
             </NavBtn>
         </Box>
