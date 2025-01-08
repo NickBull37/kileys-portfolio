@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/NickBull37/kileys-portfolio/static/css/main.158a815c.css",
+    "main.js": "/NickBull37/kileys-portfolio/static/js/main.4e06dbd4.js",
+    "static/media/landing-bg.png": "/NickBull37/kileys-portfolio/static/media/landing-bg.c45860474acc2c7e7a6c.png",
+    "static/media/daenerys.png": "/NickBull37/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
+    "static/media/landing-bg2.png": "/NickBull37/kileys-portfolio/static/media/landing-bg2.f9c6731076e21c1b4ee7.png",
+    "static/media/article8-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
+    "static/media/article9-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article9-preview.7bef1942ff6b3763d7c8.jpg",
+    "static/media/article3-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article3-preview.0bee41b66a62d38c575e.jpg",
+    "static/media/article2-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article2-preview.0ffa7cfb37a925f34f44.jpg",
+    "static/media/article7-preview.png": "/NickBull37/kileys-portfolio/static/media/article7-preview.501b1120f1674a7236ea.png",
+    "static/media/article6-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article6-preview.43ef2b4446e438e063c7.jpg",
+    "static/media/article4-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article4-preview.6bb8809bd1e7725c1d1e.jpg",
+    "static/media/article16-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article16-preview.d177a58e065ff38c021f.jpg",
+    "static/media/article5-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article5-preview.f7ad1e445de73a66fa1a.jpg",
+    "static/media/article1-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article1-preview.fd555a6d4170f6a8f2b5.jpg",
+    "static/media/article13-preview.jpg": "/NickBull37/kileys-portfolio/static/media/article13-preview.c9e50ebefdaa298ddd56.jpg",
+    "static/media/mongabay-dark.jpg": "/NickBull37/kileys-portfolio/static/media/mongabay-dark.93b9b8b7eaddbc51fc78.jpg",
+    "static/media/feel-free.ttf": "/NickBull37/kileys-portfolio/static/media/feel-free.861a9255c95fc2cb6e87.ttf",
+    "static/media/article10-preview.png": "/NickBull37/kileys-portfolio/static/media/article10-preview.447b1435f657ded495bd.png",
+    "static/media/article15-preview.png": "/NickBull37/kileys-portfolio/static/media/article15-preview.f2e021bb955e97fa58bd.png",
+    "static/media/mongabay-light.jpg": "/NickBull37/kileys-portfolio/static/media/mongabay-light.3cb20cce20f1cdffd460.jpg",
+    "static/media/mongabay.jpg": "/NickBull37/kileys-portfolio/static/media/mongabay.1cf39059533332bc0db9.jpg",
+    "static/media/article12-preview.png": "/NickBull37/kileys-portfolio/static/media/article12-preview.88f1989fc54217445594.png",
+    "static/media/article14-preview.png": "/NickBull37/kileys-portfolio/static/media/article14-preview.97ee0e084dfb3c6abcdd.png",
+    "static/media/slate.png": "/NickBull37/kileys-portfolio/static/media/slate.88c6378872ae2573deb9.png",
+    "static/media/article11-preview.png": "/NickBull37/kileys-portfolio/static/media/article11-preview.46aa958ffdabd17412eb.png",
+    "static/media/time.png": "/NickBull37/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
+    "index.html": "/NickBull37/kileys-portfolio/index.html",
+    "main.158a815c.css.map": "/NickBull37/kileys-portfolio/static/css/main.158a815c.css.map",
+    "main.4e06dbd4.js.map": "/NickBull37/kileys-portfolio/static/js/main.4e06dbd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.158a815c.css",
+    "static/js/main.4e06dbd4.js"
+  ]
+}
