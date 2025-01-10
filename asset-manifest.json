@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.3b77ee85.css",
-    "main.js": "/kileys-portfolio/static/js/main.d1cd3b5a.js",
+    "main.css": "/kileys-portfolio/static/css/main.795d00c1.css",
+    "main.js": "/kileys-portfolio/static/js/main.230be40c.js",
     "static/media/landing-bg.png": "/kileys-portfolio/static/media/landing-bg.c45860474acc2c7e7a6c.png",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/landing-bg2.png": "/kileys-portfolio/static/media/landing-bg2.f9c6731076e21c1b4ee7.png",
@@ -16,23 +16,22 @@
     "static/media/article5-preview.jpg": "/kileys-portfolio/static/media/article5-preview.f7ad1e445de73a66fa1a.jpg",
     "static/media/article1-preview.jpg": "/kileys-portfolio/static/media/article1-preview.fd555a6d4170f6a8f2b5.jpg",
     "static/media/article13-preview.jpg": "/kileys-portfolio/static/media/article13-preview.c9e50ebefdaa298ddd56.jpg",
-    "static/media/mongabay-dark.jpg": "/kileys-portfolio/static/media/mongabay-dark.93b9b8b7eaddbc51fc78.jpg",
     "static/media/feel-free.ttf": "/kileys-portfolio/static/media/feel-free.861a9255c95fc2cb6e87.ttf",
     "static/media/article10-preview.png": "/kileys-portfolio/static/media/article10-preview.447b1435f657ded495bd.png",
     "static/media/article15-preview.png": "/kileys-portfolio/static/media/article15-preview.f2e021bb955e97fa58bd.png",
     "static/media/mongabay-light.jpg": "/kileys-portfolio/static/media/mongabay-light.3cb20cce20f1cdffd460.jpg",
-    "static/media/mongabay.jpg": "/kileys-portfolio/static/media/mongabay.1cf39059533332bc0db9.jpg",
     "static/media/article12-preview.png": "/kileys-portfolio/static/media/article12-preview.88f1989fc54217445594.png",
     "static/media/article14-preview.png": "/kileys-portfolio/static/media/article14-preview.97ee0e084dfb3c6abcdd.png",
     "static/media/slate.png": "/kileys-portfolio/static/media/slate.88c6378872ae2573deb9.png",
     "static/media/article11-preview.png": "/kileys-portfolio/static/media/article11-preview.46aa958ffdabd17412eb.png",
+    "static/media/mongabay-dark.png": "/kileys-portfolio/static/media/mongabay-dark.0837ced13898447bf2bd.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.3b77ee85.css.map": "/kileys-portfolio/static/css/main.3b77ee85.css.map",
-    "main.d1cd3b5a.js.map": "/kileys-portfolio/static/js/main.d1cd3b5a.js.map"
+    "main.795d00c1.css.map": "/kileys-portfolio/static/css/main.795d00c1.css.map",
+    "main.230be40c.js.map": "/kileys-portfolio/static/js/main.230be40c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b77ee85.css",
-    "static/js/main.d1cd3b5a.js"
+    "static/css/main.795d00c1.css",
+    "static/js/main.230be40c.js"
   ]
 }
