@@ -26,8 +26,7 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
         >
             <AppBar position="static" elevation={8}
                 sx={{
-                    // backgroundColor: '#080808'
-                    backgroundColor: darkModeEnabled ? colors.navBarDarkBg : colors.lightModeBase,
+                    backgroundColor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav,
                 }}
             >
                 <Container maxWidth="xl">

@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { styled } from '@mui/material/styles';
 import { Box, Button, Typography } from '@mui/material';
 import colors from '../utils/colors';
-
-const NavBtn = styled(Button)(() => ({
-    color: '#fff',
-}));
 
 const Footer = ({ darkModeEnabled }) => {
     return (
@@ -17,78 +12,62 @@ const Footer = ({ darkModeEnabled }) => {
             sx={{
                 flexDirection: { xs: 'column', md: 'row' },
                 py: { xs: '2rem', md: '0.75rem' },
-                bgcolor: darkModeEnabled ? colors.footerDarkBg : colors.lightModeBase,
+                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav,
                 borderTop: '1px solid #000',
             }}
         >
-            <NavBtn
-                sx={{
-                    color: darkModeEnabled ? colors.white : colors.black,
-                }}
-            >
+            <Button>
                 <Link to="/">
                     <Typography
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #808080', md: 'none' }
+                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         Home
                     </Typography>
                 </Link>
-            </NavBtn>
-            <NavBtn
-                sx={{
-                    color: darkModeEnabled ? colors.white : colors.black,
-                }}
-            >
+            </Button>
+            <Button>
                 <Link to="/about-me">
                     <Typography
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         About Me
                     </Typography>
                 </Link>
-            </NavBtn>
-            <NavBtn
-                sx={{
-                    color: darkModeEnabled ? colors.white : colors.black,
-                }}
-            >
+            </Button>
+            <Button>
                 <Link to="/written-work">
                     <Typography
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         Written Work
                     </Typography>
                 </Link>
-            </NavBtn>
-            <NavBtn
-                // sx={{
-                //     color: darkModeEnabled ? colors.white : colors.black,
-                // }}
-            >
+            </Button>
+            <Button>
                 <Link to="/contact">
                     <Typography
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #cccccc', md: 'none' }
+                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         Contact
                     </Typography>
                 </Link>
-            </NavBtn>
+            </Button>
         </Box>
     );
 }

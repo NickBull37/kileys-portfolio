@@ -1,6 +1,9 @@
+// HomePage Imgs
 export const landing_bg = require('../images/landing-bg.png');
 export const landing_bg2 = require('../images/landing-bg2.png');
 export const daenerys = require('../images/daenerys.png');
+
+// Article Previews
 export const article1 = require('../images/article1-preview.jpg');
 export const article2 = require('../images/article2-preview.jpg');
 export const article3 = require('../images/article3-preview.jpg');
@@ -20,20 +23,16 @@ export const article16 = require('../images/article16-preview.jpg');
 export const article17 = require('../images/article17-preview.jpg');
 
 // Publisher Imgs
+export const e360 = require('../images/Publishers/e360-vector.jpg');
 export const insideClimateNewsDark = require('../images/Publishers/inside-climate-news-dark.png');
 export const insideClimateNewsLight = require('../images/Publishers/inside-climate-news-light.png');
 export const liveScienceDark = require('../images/Publishers/live-science-dark.png');
 export const liveScienceLight = require('../images/Publishers/live-science-light.png');
-export const mongabayDark = require('../images/Publishers/mongabay-dark.jpg');
+export const mongabayDark = require('../images/Publishers/mongabay-dark.png');
 export const mongabayLight = require('../images/Publishers/mongabay-light.jpg');
-
-export const natGeo = require('../images/nat-geo.png');
-export const time = require('../images/time.png');
-export const e360 = require('../images/e360-vector.jpg');
-export const liveScience = require('../images/live-science.png');
-export const slate = require('../images/slate.png');
-export const mongabay = require('../images/mongabay.jpg');
-export const insideNews = require('../images/inside-climate-news.png');
+export const natGeo = require('../images/Publishers/nat-geo.png');
+export const slate = require('../images/Publishers/slate.png');
+export const time = require('../images/Publishers/time.png');
 
 // Icons
 export const linkedInIcon = <i className="fa-brands fa-linkedin"></i>;

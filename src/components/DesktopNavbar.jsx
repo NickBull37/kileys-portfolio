@@ -13,7 +13,7 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
             sx={{
                 display: { xs: 'none', md: 'flex' },
                 pr: 1,
-                bgcolor: darkModeEnabled ? colors.navBarDarkBg : colors.lightModeBase,
+                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav,
                 height: '60px',
                 // offset-x offset-y blur-radius spread-radius color
                 boxShadow: '0px 2px 4px -1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.35), 0px 1px 10px 0px rgba(0, 0, 0, 0.50)',

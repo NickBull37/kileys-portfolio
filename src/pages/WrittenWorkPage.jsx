@@ -100,7 +100,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
     return (
         <Box
             sx={{
-                bgcolor: darkModeEnabled ? colors.writtenWorkDarkBg : colors.writtenWorkLightBg,
+                bgcolor: darkModeEnabled ? colors.darkModeBg : colors.lightModeBg,
             }}
         >
             <DesktopNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
@@ -117,7 +117,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             >
                 <Typography
                     sx={{
-                        color: darkModeEnabled ? '#fff' : '#000',
+                        color: darkModeEnabled ? colors.white : colors.black,
                         fontSize: { xs: '2.25rem', md: '3rem' },
                         fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
                         lineHeight: '1.167',
@@ -129,7 +129,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 </Typography>
                 <Typography
                     sx={{
-                        color: darkModeEnabled ? '#fff' : '#000',
+                        color: darkModeEnabled ? colors.white : colors.black,
                     }}
                 >
                     <i>To read more, subscribe to ICN's "Today's Climate" newsletter <u><a href="https://insideclimatenews.org/newsletter/" target="_blank" rel="noopener noreferrer">here</a></u>.</i>
@@ -151,7 +151,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -168,7 +168,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                     component="div"
                                     variant="h5"
                                     sx={{
-                                        color: darkModeEnabled ? '#fff' : '#000',
+                                        color: darkModeEnabled ? colors.white : colors.black,
                                     }}
                                 >
                                     The Futures of Right Whales and Lobstermen Are Entangled. Could High-Tech Gear Help Save Them Both?
@@ -195,12 +195,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -219,7 +219,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -263,12 +263,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -287,7 +287,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -331,12 +331,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -355,7 +355,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -399,12 +399,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -423,7 +423,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -467,12 +467,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -491,7 +491,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -535,12 +535,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -559,7 +559,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -603,12 +603,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -627,7 +627,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -671,12 +671,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -695,7 +695,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -739,12 +739,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -792,7 +792,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -836,12 +836,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -860,7 +860,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -904,12 +904,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -928,7 +928,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -972,12 +972,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -996,7 +996,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -1040,12 +1040,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -1064,7 +1064,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -1108,12 +1108,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -1132,7 +1132,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -1176,12 +1176,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -1200,7 +1200,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -1230,7 +1230,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                         mb: 1
                                     }}
                                 >
-                                    <img className="mongabay-vector" src={darkModeEnabled ? mongabayDark : mongabayLight}></img>
+                                    <img className="mongabay-vector" src={darkModeEnabled ? mongabayDark : mongabayDark}></img>
                                 </Box>
                                 <SubText
                                     variant="subtitle1"
@@ -1244,12 +1244,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
@@ -1268,7 +1268,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <ArticleCard
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
-                            backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                         }}
                     >
                         <CardMedia
@@ -1313,12 +1313,12 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <PreviewText
                                     variant='body2'
                                     sx={{
-                                        color: darkModeEnabled ? colors.gray80 : colors.black,
-                                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                                        color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                                         '&::after': {
                                             background: darkModeEnabled 
-                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardDarkBg} 100%)` 
-                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.articleCardLightBg} 100%)`,
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
                                         },
                                     }}
                                 >
