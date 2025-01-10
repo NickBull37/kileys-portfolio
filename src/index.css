@@ -199,6 +199,10 @@ body {
     max-height: 30px;
 }
 
+.e360-vector {
+    max-height: 40px;
+}
+
 .slate-vector {
     max-height: 25px;
 }
@@ -209,6 +213,9 @@ body {
 
 .climate-news-vector {
     max-height: 20px;
+}
+.grow-img {
+    flex-grow: 1;
 }
 
 

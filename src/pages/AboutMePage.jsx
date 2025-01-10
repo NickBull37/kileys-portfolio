@@ -31,7 +31,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 <StyledPaper
                     className='about-styled-paper'
                     sx={{
-                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.lightModeAccent,
+                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                     }}
                 >
                     <Stack>

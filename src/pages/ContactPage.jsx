@@ -32,7 +32,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 <StyledPaper
                     className='contact-styled-paper'
                     sx={{
-                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.articleCardLightBg,
+                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                     }}
                 >
                     <Stack>

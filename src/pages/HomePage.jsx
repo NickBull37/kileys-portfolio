@@ -68,7 +68,7 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 <StyledPaper
                     className='landing-styled-paper'
                     sx={{
-                        backgroundColor: darkModeEnabled ? colors.articleCardDarkBg : colors.lightModeBase,
+                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
                     }}
                 >
                     <Box

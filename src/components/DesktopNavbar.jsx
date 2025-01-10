@@ -28,7 +28,9 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     ml: 4
                 }}
             >
-                KileyPrice.com
+                <Link to="/">
+                    KileyPrice.com
+                </Link>
             </Typography>
             <Button
                 sx={{
