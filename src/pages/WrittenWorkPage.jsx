@@ -23,9 +23,11 @@ const ArticleCard = styled(Card)(() => ({
     backgroundColor: colors.gray25,
     // offset-x offset-y blur-radius spread-radius color
     boxShadow: '0px 2px 3px -1px rgba(0, 0, 0, 0.4), 0px 4px 3px 0px rgba(0, 0, 0, 0.28), 0px 0px 6px 0px rgba(0, 0, 0, 0.24)',
+    transition: 'transform 0.3s ease',
     '&:hover': {
         cursor: 'pointer',
         boxShadow: '0px 5px 5px -1px rgba(0, 0, 0, 0.5), 0px 7px 6px 0px rgba(0, 0, 0, 0.35), 0px 3px 12px 0px rgba(0, 0, 0, 0.5)',
+        transform: 'translateY(-2px)',
     },
 }));
 
@@ -74,7 +76,7 @@ const SubText = styled(Typography)(() => ({
 
 const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {    
 
-    const shareUrl = '#';
+    const shareUrl = 'https://nickbull37.github.io/kileys-portfolio/#/written-work';
 
     const handleFaceBookShare = () => {
         const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;

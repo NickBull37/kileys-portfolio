@@ -27,11 +27,12 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 className='about-stack'
                 alignItems="center"
             >
-
                 <StyledPaper
                     className='about-styled-paper'
                     sx={{
-                        backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
+                        backgroundColor: darkModeEnabled
+                            ? colors.darkModePage
+                            : colors.lightModePage,
                     }}
                 >
                     <Stack>

@@ -32,6 +32,7 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     KileyPrice.com
                 </Link>
             </Typography>
+            
             <Button
                 sx={{
                     color: darkModeEnabled ? colors.white : colors.black,
@@ -59,6 +60,16 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
             >
                 <Link to="/written-work">
                     Written Work
+                </Link>
+            </Button>
+            
+            <Button
+                sx={{
+                    color: darkModeEnabled ? colors.white : colors.black,
+                }}
+            >
+                <Link to="/written-work-2">
+                    Portfolio
                 </Link>
             </Button>
 
