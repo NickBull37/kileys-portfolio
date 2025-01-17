@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
+import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { Box, Typography, AppBar, Toolbar, Container, IconButton, Menu, MenuItem } from '@mui/material';
 import { ThemeToggle } from '../components/index';
+import { kpLogoDark, kpLogoLight } from '../utils/constants';
 import MenuIcon from '@mui/icons-material/Menu';
 import colors from '../utils/colors';
+
+const LogoContainer = styled(Box)(() => ({
+    display: 'flex',
+    padding: '0',
+    marginLeft: '0.25rem',
+    marginTop: '0.125rem',
+    flexGrow: 1
+}));
 
 const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
@@ -21,7 +31,7 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
         <Box
             sx={{
                 display: { xs: 'flex', md: 'none' },
-                pb: '2.5rem'
+                // pb: '2.5rem'
             }}
         >
             <AppBar position="static" elevation={8}
@@ -31,7 +41,7 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
             >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Typography
+                        {/* <Typography
                             className='feel-free'
                             sx={{
                                 color: darkModeEnabled ? colors.white : colors.black,
@@ -41,7 +51,15 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             }}
                         >
                             KileyPrice.com
-                        </Typography>
+                        </Typography> */}
+                        <LogoContainer>
+                            <Link to="/">
+                                <img
+                                    src={darkModeEnabled ? kpLogoDark : kpLogoLight}
+                                    height={40}
+                                />
+                            </Link>
+                        </LogoContainer>
                         <Box
                             sx={{
                                 display: { xs: 'flex', md: 'none' },

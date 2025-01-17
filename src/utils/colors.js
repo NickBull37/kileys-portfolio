@@ -1,5 +1,13 @@
 const colors = {
 
+    lightModeBg: "#cccccc",
+    lightModePage: "#f2f2f2",
+    lightModeNav: "#f2f2f2",
+
+    darkModeBg: "#262626",
+    darkModePage: "#404040",
+    darkModeNav: "#1a1a1a",
+
     white: "#ffffff",
     gray95: "#f2f2f2",
     gray90: "#e6e6e6",
@@ -20,14 +28,7 @@ const colors = {
     gray15: "#262626",
     gray10: "#1a1a1a",
     black: "#000000",
-
-    lightModeBg: "#cccccc",
-    lightModePage: "#f2f2f2",
-    lightModeNav: "#f2f2f2",
-
-    darkModeBg: "#262626",
-    darkModePage: "#404040",
-    darkModeNav: "#1a1a1a",
+    
 };
 
 export default colors;

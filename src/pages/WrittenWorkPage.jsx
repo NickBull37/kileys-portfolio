@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography, Card, CardContent, CardMedia, IconButton } from '@mui/material';
-import colors from '../utils/colors';
 import { article1, article2, article3, article4, article5, article6, article7, article8, article9, article10, article11, article12, article13, article14, article15, article16, article17 } from '../utils/constants';
 import { DesktopNavbar, MobileNavbar, Footer } from '../components/index';
 import { insideClimateNewsDark, insideClimateNewsLight, liveScienceDark, liveScienceLight, mongabayDark, mongabayLight } from '../utils/constants';
@@ -10,6 +8,7 @@ import { natGeo, time, e360, slate } from '../utils/constants';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import colors from '../utils/colors';
 
 const PageContainer = styled(Box)(() => ({
     width: '100vw',
@@ -111,8 +110,8 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             {/* ----------------------------- SELECTED ----------------------------- */}
             <Box
                 sx={{
-                    px: { xs: 3, md: 38 },
-                    mt: { xs: 0, md: 6 },
+                    px: { xs: 4, md: 38 },
+                    mt: { xs: 5, md: 6 },
                     mb: 3,
                     mx: 0,
                 }}
@@ -141,7 +140,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 gap={5}
                 sx={{
                     margin: 0,
-                    px: { xs: 3, md: 38 },
+                    px: { xs: 4, md: 38 },
 
                 }}
             >
@@ -762,7 +761,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             <Box
                 sx={{
                     margin: 0,
-                    px: { xs: 3, md: 38 },
+                    px: { xs: 4, md: 38 },
                     mt: 10,
                     mb: 3,
                 }}
@@ -783,7 +782,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 gap={5}
                 sx={{
                     margin: 0,
-                    px: { xs: 3, md: 38 },
+                    px: { xs: 4, md: 38 },
                 }}
             >
                 <a
@@ -1338,7 +1337,7 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 gap={1}
                 sx={{
                     my: 8,
-                    px: { xs: 3, md: 38 },
+                    px: { xs: 4.5, md: 38 },
                 }}
             >
                 <Typography variant='h6'

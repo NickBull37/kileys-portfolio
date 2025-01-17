@@ -1,26 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography, Card, CardContent, CardMedia, IconButton } from '@mui/material';
-import colors from '../utils/colors';
-import { article1, article2, article3, article4, article5, article6, article7, article8, article9, article10, article11, article12, article13, article14, article15, article16, article17 } from '../utils/constants';
 import { DesktopNavbar, MobileNavbar, Footer } from '../components/index';
-import { insideClimateNewsDark, insideClimateNewsLight, liveScienceDark, liveScienceLight, mongabayDark, mongabayLight } from '../utils/constants';
-import { natGeo, time, e360, slate, bgTextureDark } from '../utils/constants';
+import { insideClimateNewsDark, insideClimateNewsLight, liveScienceDark, liveScienceLight, mongabayDark } from '../utils/constants';
+import { natGeo, time, e360, slate } from '../utils/constants';
+import { article1, article2, article3, article4, article5, article6, article7, article8, article9, article10, article11, article12, article13, article14, article15, article16, article17 } from '../utils/constants';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
-const PageContainer = styled(Box)(() => ({
-    width: '100%',
-    margin: '0',
-    padding: '0',
-}));
+import colors from '../utils/colors';
 
 const ArticleCard = styled(Card)(() => ({
     display: 'flex',
     width: '340px',
-    // maxHeight: '503px',
     // offset-x offset-y blur-radius spread-radius color
     boxShadow: '0px 2px 3px -1px rgba(0, 0, 0, 0.4), 0px 4px 3px 0px rgba(0, 0, 0, 0.28), 0px 0px 6px 0px rgba(0, 0, 0, 0.24)',
     transition: 'transform 0.3s ease',
@@ -29,12 +21,6 @@ const ArticleCard = styled(Card)(() => ({
         boxShadow: '0px 5px 5px -1px rgba(0, 0, 0, 0.5), 0px 7px 6px 0px rgba(0, 0, 0, 0.35), 0px 3px 12px 0px rgba(0, 0, 0, 0.5)',
         transform: 'translateY(-4px)',
     },
-}));
-
-const ArticleContentBox = styled(Box)(() => ({
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
 }));
 
 const ArticleContent = styled(CardContent)(() => ({
@@ -50,20 +36,16 @@ const ArticleContent = styled(CardContent)(() => ({
 }));
 
 const TitleText = styled(Typography)(() => ({
-    // height: '106px',
-    // width: '100%',
-    // fontSize: '1.25rem',
-    //fontSize: 'clamp(1rem, 4vw, 2rem)', // Minimum 1rem, maximum 3rem, flexible in between
     marginBottom: '12px'
 }));
 
 const PreviewText = styled(Typography)(() => ({
     marginBottom: '2px',
-    display: '-webkit-box', // Enables a multi-line flexbox container for text
-    WebkitBoxOrient: 'vertical', // Vertical orientation for the text
-    overflow: 'hidden', // Hides overflowing text
-    textOverflow: 'ellipsis', // Ensures text doesn’t break layout
-    WebkitLineClamp: 3, // Limits the text to 3 lines
+    display: '-webkit-box', 
+    WebkitBoxOrient: 'vertical', 
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    WebkitLineClamp: 3,
     position: 'relative',
     '&::after': {
         content: '""',
@@ -71,8 +53,8 @@ const PreviewText = styled(Typography)(() => ({
         bottom: 0,
         left: 0,
         right: 0,
-        height: '2.5em', // Height of the fade effect
-        pointerEvents: 'none', // Prevent interaction with the gradient
+        height: '2.5em',
+        pointerEvents: 'none',
     },
 }));
 
@@ -82,8 +64,8 @@ const SubText = styled(Typography)(() => ({
 
 const WrittenWorkPage2 = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
+    // Inside Climate News
     const articles = [
-        // Inside Climate News
         {
             titleSize: '1.25rem',
             title: 'The Futures of Right Whales and Lobstermen Are Entangled. Could High-Tech Gear Help Save Them Both?',
@@ -192,7 +174,10 @@ const WrittenWorkPage2 = ({ darkModeEnabled, setDarkModeEnabled }) => {
             readTime: '9 min read',
             previewText: 'Three years ago, a group of eco-conscious students at Harvard Medical School conducted a poll with their fellow classmates and found that there was strong interest in ramping up climate health education in their courses.',
         },
-        // Freelance
+    ];
+
+    // Freelance
+    const freelanceArticles = [
         {
             titleSize: '1.25rem',
             title: 'These deep-sea animals are new to science—and already at risk',
@@ -445,14 +430,131 @@ const WrittenWorkPage2 = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         </a>
                     ))}
                 </Box>
+            </Stack>
+
+            <Stack
+                gap={2}
+                sx={{
+                    mt: { xs: 2, md: 12 },
+                    px: { xs: '1.5rem', md: '11rem' },
+                }}
+            >
+                <Stack
+                    display="flex"
+                    sx={{
+                        ml: { xs: 1.5, md: 5 },
+                    }}
+                >
+                    <Typography
+                        sx={{
+                            color: darkModeEnabled ? colors.white : colors.black,
+                            fontSize: { xs: '2.25rem', md: '3rem' },
+                            fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
+                            lineHeight: '1.167',
+                            letterSpacing: '0em',
+                        }}
+                    >
+                        Freelance
+                    </Typography>
+                </Stack>
+                <Box
+                    display="flex"
+                    flexWrap="wrap"
+                    alignItems="center"
+                    sx={{
+                        justifyContent: { xs: 'center', md: 'flex-start' },
+                    }}
+                >
+                    {freelanceArticles.map((article, index) => (
+                        <a
+                            key={index}
+                            href={article.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <ArticleCard
+                                sx={{
+                                    ml: { xs: 0, md: 5 },
+                                    mb: 4,
+                                    flexDirection: 'column',
+                                    backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
+                                }}
+                            >
+                                <CardMedia
+                                    component="img"
+                                    sx={{
+                                        width: 'auto',
+                                        height: '200px'
+                                    }}
+                                    image={article.image}
+                                    alt="Article Preview Image"
+                                />
+
+                                <ArticleContent>
+                                    <TitleText
+                                        component="div"
+                                        flexGrow={1}
+                                        sx={{
+                                            color: darkModeEnabled ? '#fff' : '#000',
+                                            fontSize: '1.25rem',
+                                            maxWidth: '100%',
+                                        }}
+                                    >
+                                        {article.title}
+                                    </TitleText>
+
+                                    <Box
+                                        sx={{
+                                            mb: 1.5
+                                        }}
+                                    >
+                                        <img
+                                            className={article.publisherImgClass}
+                                            src={darkModeEnabled ? article.darkPublisherImg : article.lightPublisherImg}
+                                            alt="Logo"
+                                        />
+                                    </Box>
+
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000'
+                                        }}
+                                    >
+                                        {article.date}&nbsp;&nbsp;-&nbsp;&nbsp;<i>{article.readTime}</i>
+                                    </SubText>
+
+                                    <PreviewText
+                                        variant="body2"
+                                        sx={{
+                                            color: darkModeEnabled ? colors.gray80 : colors.gray20,
+                                            backgroundColor: darkModeEnabled ? colors.darkModePage : colors.lightModePage,
+                                            '&::after': {
+                                            background: darkModeEnabled 
+                                                ? `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.darkModePage} 100%)` 
+                                                : `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${colors.lightModePage} 100%)`,
+                                        },
+                                        }}
+                                    >
+                                        {article.previewText}
+                                    </PreviewText>
+                                    
+                                </ArticleContent>
+                            </ArticleCard>
+                        </a>
+                    ))}
+                </Box>
 
                 <Box
                     display="flex"
-                    justifyContent="center"
+                    justifyContent="flex-start"
                     alignItems="center"
                     gap={1}
                     sx={{
-                        mb: 5,
+                        mt: 4,
+                        mb: 8,
+                        ml: { xs: 1.5, md: 5 },
                     }}
                 >
                     <Typography variant='h6'

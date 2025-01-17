@@ -160,6 +160,16 @@ body {
     border-radius: 8px!important;
 }
 
+.landing-img-2 {
+    max-height: 450px;
+    max-width: 100%; /* Adjust to your container's width */
+    /* min-width: 200px; */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain; /* Ensures the entire image fits inside the container */
+    border-radius: 12px!important;
+    position: relative;
+}
+
 .article-img {
     max-height: 100px;
     min-height: 100px;
@@ -260,6 +270,11 @@ body {
 
 .landing-title-box {
     padding: 0 320px;
+}
+
+.homepage-box {
+    height: calc(100% - 60px);
+    width: 100%;
 }
 
 
