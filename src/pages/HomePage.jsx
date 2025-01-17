@@ -51,6 +51,10 @@ const Image1Container = styled(Box)(() => ({
     boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
     transform: 'rotate(-12deg)',
     zIndex: '1',
+    transition: '0.25s',
+    '&:hover': {
+        transform: 'rotate(-12deg) translateY(-15px)',
+    },
 }));
 
 const Image2Container = styled(Box)(() => ({
@@ -60,6 +64,10 @@ const Image2Container = styled(Box)(() => ({
     boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
     transform: 'rotate(8deg) translateX(-10px)',
     zIndex: '2',
+    transition: '0.25s',
+    '&:hover': {
+        transform: 'rotate(8deg) translateY(-15px)',
+    },
 }));
 
 const TextStack = styled(Stack)(() => ({
