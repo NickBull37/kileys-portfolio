@@ -4,8 +4,11 @@ export const landing_bg2 = require('../images/landing-bg2.png');
 export const daenerys = require('../images/daenerys.png');
 export const daenerys2 = require('../images/daenerys-2.png');
 export const kpLogoDark = require('../images/kp-logo-dark.png');
-// export const kpLogoDarkTest = require('../images/kp-logo-dark-test.png');
 export const kpLogoLight = require('../images/kp-logo-light.png');
+
+export const portfolio = require('../images/portfolio.png');
+export const email = require('../images/email.png');
+export const cat = require('../images/cat.png');
 
 // Article Previews
 export const article1 = require('../images/article1-preview.jpg');

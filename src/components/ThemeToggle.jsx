@@ -1,7 +1,44 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Box, Switch } from '@mui/material';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import NightlightRoundIcon from '@mui/icons-material/NightlightRound';
+import ModeNightIcon from '@mui/icons-material/ModeNight';
+
+const ThemeSwitch = styled(Switch)(() => ({
+    width: 62,
+    height: 34,
+    padding: 9,
+    '& .MuiSwitch-switchBase': {
+        margin: 1,
+        padding: 0,
+        transform: 'translateX(8px)',
+        '&.Mui-checked': {
+            color: '#fff',
+            transform: 'translateX(23px)',
+            '& + .MuiSwitch-track': {
+                opacity: 1,
+                backgroundColor: '#8d9aa5', // checked track color
+            },
+        },
+    },
+    '& .MuiSwitch-thumb': {
+        width: 32,
+        height: 32,
+        '&::before': {
+            content: "''",
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            left: 0,
+            top: 0,
+        },
+    },
+    '& .MuiSwitch-track': { // checked
+        opacity: 1,
+        backgroundColor: '#8d9aa5',
+        borderRadius: 20 / 2,
+    },
+}));
 
 const ThemeToggle = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
@@ -11,59 +48,36 @@ const ThemeToggle = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
     return (
         <Box
-            display="flex"
-            justifyContent="flex-end"
             sx={{
-                mx: { xs: 0, md: 2 },
+                mr: 1
             }}
         >
-            <Box
-                display="flex"
-                alignItems="center"
-                sx={{
-                    pl: 0.5,
-                    pr: 1.25,
-                    py: 0.25,
-                    bgcolor: darkModeEnabled ? '#ffeb99' : '#666666',
-                    border: darkModeEnabled ? '1px solid #b34700' : '1px solid #000',
-                    borderRadius: '16px',
-                    '&:hover': {
-                        cursor: 'pointer'
-                    },
-                }}
-                onClick={handleThemeToggleClick}
-            >
-                {darkModeEnabled
-                    ?
-                        <>
-                            <LightModeIcon
-                                sx={{
-                                    color: '#e6b800'
-                                }}
-                            />
-                            <Typography
-                                sx={{
-                                    color: '#b34700',
-                                    fontSize: '0.8125rem',
-                                }}
-                            >
-                                &nbsp;Light Mode
-                            </Typography>
-                        </>
-                    :
-                        <>
-                            <NightlightRoundIcon />
-                            <Typography
-                                sx={{
-                                    fontSize: '0.8125rem'
-                                }}
-                            >
-                                &nbsp;Dark Mode
-                            </Typography>
-                        </>
+            <ThemeSwitch
+                defaultChecked
+                icon={
+                    <LightModeIcon
+                        sx={{
+                            backgroundColor: '#595959',
+                            borderRadius: '50px',
+                            p: '5px',
+                            fontSize: 30,
+                            color: '#ffcc00'
+                        }}
+                    />
                 }
-            </Box>
-
+                checkedIcon={
+                    <ModeNightIcon
+                        sx={{
+                            backgroundColor: '#666666',
+                            borderRadius: '50px',
+                            p: '5px',
+                            fontSize: 30,
+                            color: '#fff'
+                        }}
+                    />
+                }
+                onClick={handleThemeToggleClick}
+            />
         </Box>
     );
 }

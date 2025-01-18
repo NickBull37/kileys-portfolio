@@ -170,6 +170,14 @@ body {
     position: relative;
 }
 
+.portfolio-img {
+    height: 425px;
+}
+
+.contact-img {
+    height: 400px;
+}
+
 .article-img {
     max-height: 100px;
     min-height: 100px;
