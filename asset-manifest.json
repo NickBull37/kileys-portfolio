@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.da2def64.css",
-    "main.js": "/kileys-portfolio/static/js/main.3f6fd0af.js",
+    "main.css": "/kileys-portfolio/static/css/main.27915283.css",
+    "main.js": "/kileys-portfolio/static/js/main.2960349f.js",
     "static/media/landing-bg.png": "/kileys-portfolio/static/media/landing-bg.c45860474acc2c7e7a6c.png",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/landing-bg2.png": "/kileys-portfolio/static/media/landing-bg2.f9c6731076e21c1b4ee7.png",
@@ -17,6 +17,7 @@
     "static/media/article5-preview.jpg": "/kileys-portfolio/static/media/article5-preview.f7ad1e445de73a66fa1a.jpg",
     "static/media/article1-preview.jpg": "/kileys-portfolio/static/media/article1-preview.fd555a6d4170f6a8f2b5.jpg",
     "static/media/article13-preview.jpg": "/kileys-portfolio/static/media/article13-preview.c9e50ebefdaa298ddd56.jpg",
+    "static/media/contact.png": "/kileys-portfolio/static/media/contact.37e35841eba82352865a.png",
     "static/media/feel-free.ttf": "/kileys-portfolio/static/media/feel-free.861a9255c95fc2cb6e87.ttf",
     "static/media/daenerys-2.png": "/kileys-portfolio/static/media/daenerys-2.4131dc6507a2b7717ec6.png",
     "static/media/email.png": "/kileys-portfolio/static/media/email.0296f8407570ef1b32bf.png",
@@ -33,11 +34,11 @@
     "static/media/mongabay-dark.png": "/kileys-portfolio/static/media/mongabay-dark.0837ced13898447bf2bd.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.da2def64.css.map": "/kileys-portfolio/static/css/main.da2def64.css.map",
-    "main.3f6fd0af.js.map": "/kileys-portfolio/static/js/main.3f6fd0af.js.map"
+    "main.27915283.css.map": "/kileys-portfolio/static/css/main.27915283.css.map",
+    "main.2960349f.js.map": "/kileys-portfolio/static/js/main.2960349f.js.map"
   },
   "entrypoints": [
-    "static/css/main.da2def64.css",
-    "static/js/main.3f6fd0af.js"
+    "static/css/main.27915283.css",
+    "static/js/main.2960349f.js"
   ]
 }
