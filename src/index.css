@@ -174,8 +174,16 @@ body {
     height: 425px;
 }
 
+.portfolio-mobile-img {
+    height: 225px;
+}
+
 .contact-img {
-    height: 400px;
+    height: 330px;
+}
+
+.contact-mobile-img {
+    height: 200px;
 }
 
 .article-img {

@@ -8,6 +8,7 @@ export const kpLogoLight = require('../images/kp-logo-light.png');
 
 export const portfolio = require('../images/portfolio.png');
 export const email = require('../images/email.png');
+export const contact = require('../images/contact.png');
 export const cat = require('../images/cat.png');
 
 // Article Previews

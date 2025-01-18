@@ -90,7 +90,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 lineHeight: '1.55',
                             }}
                         >
-                            Hi! I am a reporter at Inside Climate News, where I write the “Today’s Climate” newsletter. I write about the most pressing climate-related news happening around the world—from biodiversity loss to extreme weather. My work has appeared in National Geographic, Grist, Time Magazine, Scientific American and more.
+                            Hi! I am a reporter at Inside Climate News, where I write the "Today's Climate" newsletter. I write about the most pressing climate-related news happening around the world—from biodiversity loss to extreme weather. My work has appeared in National Geographic, Grist, Time Magazine, Scientific American and more.
                         </Typography>
 
                         <Box

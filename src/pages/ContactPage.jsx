@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, Footer } from '../components/index';
 import colors from '../utils/colors';
-import { cat } from '../utils/constants';
+import { cat, contact } from '../utils/constants';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -24,13 +24,13 @@ const ImageBox = styled(Box)(() => ({
     display: 'flex',
     alignItems: 'center',
     marginLeft: '3rem',
-    borderRadius: '12px',
+    //borderRadius: '12px',
 }));
 
 const Image1Container = styled(Box)(() => ({
-    height: '400px',
+    height: '330px',
     borderRadius: '12px',
-    boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
+    //boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
     transition: '0.25s',
     overflow: 'hidden'
 }));
@@ -219,7 +219,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
                     <ImageBox>
                         <Image1Container>
-                            <img className="contact-img" src={cat} />
+                            <img className="contact-img" src={contact} />
                         </Image1Container>
                     </ImageBox>
 
