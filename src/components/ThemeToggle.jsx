@@ -53,7 +53,7 @@ const ThemeToggle = ({ darkModeEnabled, setDarkModeEnabled }) => {
             }}
         >
             <ThemeSwitch
-                defaultChecked
+                defaultChecked={darkModeEnabled}
                 icon={
                     <LightModeIcon
                         sx={{
