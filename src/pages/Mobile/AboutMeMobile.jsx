@@ -1,17 +1,17 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Box, Stack, Paper, Typography } from '@mui/material';
-import { DesktopNavbar, MobileNavbar, Footer } from '../../components/index';
+import { Box, Stack, Typography } from '@mui/material';
+import { DesktopNavbar, MobileNavbar, MobileFooter } from '../../components/index';
 import { portfolio } from '../../utils/constants';
 import colors from '../../utils/colors';
 
-const PageContainer = styled(Box)(({ theme }) => ({
+const PageContainer = styled(Box)(() => ({
     width: '100%',
     margin: '0',
     padding: '0',
 }));
 
-const MobileAboutContainer = styled(Box)(({ theme }) => ({
+const MobileAboutContainer = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -21,7 +21,7 @@ const MobileImagesContainer = styled(Box)(() => ({
     position: 'absolute',
     display: 'flex',
     maxHeight: '250px',
-    marginTop: '2rem',
+    marginTop: '2.5rem',
 }));
 
 const Image1Container = styled(Box)(() => ({
@@ -29,7 +29,6 @@ const Image1Container = styled(Box)(() => ({
     position: 'relative',
     borderRadius: '12px',
     boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
-    zIndex: '1',
 }));
 
 const MobileTextStack = styled(Stack)(() => ({
@@ -38,7 +37,7 @@ const MobileTextStack = styled(Stack)(() => ({
     width: '84%',
     height: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    paddingTop: '300px',
+    paddingTop: '320px',
     paddingBottom: '40px',
 }));
 
@@ -62,7 +61,7 @@ const AboutMeMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         textAlign="center"
                         className='feel-free'
                         sx={{
-                            fontSize: '5rem',
+                            fontSize: '5.5rem',
                             lineHeight: '1',
                             color: colors.white,
                             mb: 3,
@@ -83,7 +82,7 @@ const AboutMeMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 </MobileTextStack>
             </MobileAboutContainer>
 
-            <Footer darkModeEnabled={darkModeEnabled} />
+            <MobileFooter darkModeEnabled={darkModeEnabled} />
 
         </PageContainer>
     );

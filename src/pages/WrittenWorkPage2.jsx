@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography, Card, CardContent, CardMedia, IconButton } from '@mui/material';
-import { DesktopNavbar, MobileNavbar, Footer } from '../components/index';
+import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
 import { insideClimateNewsDark, insideClimateNewsLight, liveScienceDark, liveScienceLight, mongabayDark } from '../utils/constants';
 import { natGeo, time, e360, slate } from '../utils/constants';
 import { article1, article2, article3, article4, article5, article6, article7, article8, article9, article10, article11, article12, article13, article14, article15, article16, article17 } from '../utils/constants';
@@ -601,7 +601,7 @@ const WrittenWorkPage2 = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
             </Stack>
 
-            <Footer darkModeEnabled={darkModeEnabled} />
+            <DesktopFooter darkModeEnabled={darkModeEnabled} />
         </Box>
     );
 }

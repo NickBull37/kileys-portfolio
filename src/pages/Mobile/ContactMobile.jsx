@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Box, Stack, Typography, Paper } from '@mui/material';
-import { DesktopNavbar, MobileNavbar, Footer } from '../../components/index';
+import { Box, Stack, Typography } from '@mui/material';
+import { DesktopNavbar, MobileNavbar, MobileFooter } from '../../components/index';
 import { contact } from '../../utils/constants';
 import colors from '../../utils/colors';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
@@ -23,7 +23,7 @@ const Image1Container = styled(Box)(() => ({
     zIndex: '1',
 }));
 
-const MobileContactContainer = styled(Box)(({ theme }) => ({
+const MobileContactContainer = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -65,7 +65,7 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         textAlign="center"
                         className='feel-free'
                         sx={{
-                            fontSize: '5rem',
+                            fontSize: '5.5rem',
                             lineHeight: '1',
                             color: colors.white,
                             mb: 3,
@@ -180,7 +180,7 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 </MobileTextStack>
             </MobileContactContainer>
 
-            <Footer darkModeEnabled={darkModeEnabled} />
+            <MobileFooter darkModeEnabled={darkModeEnabled} />
 
         </PageContainer>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography } from '@mui/material';
-import { DesktopNavbar, MobileNavbar, Footer } from '../components/index'
+import { DesktopNavbar, MobileNavbar, DesktopFooter, MobileFooter } from '../components/index'
 import { daenerys, daenerys2 } from '../utils/constants';
 import colors from '../utils/colors';
 
@@ -195,7 +195,8 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 </MobileTextStack>
             </MobileLandingContainer>
 
-            <Footer darkModeEnabled={darkModeEnabled} />
+            <DesktopFooter darkModeEnabled={darkModeEnabled} />
+            <MobileFooter darkModeEnabled={darkModeEnabled} />
             
         </PageContainer>
     );

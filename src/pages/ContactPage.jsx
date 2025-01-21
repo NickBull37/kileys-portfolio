@@ -1,10 +1,8 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Link } from 'react-router-dom';
 import { Box, Stack, Typography } from '@mui/material';
-import { DesktopNavbar, MobileNavbar, Footer } from '../components/index';
-import colors from '../utils/colors';
-import { cat, contact } from '../utils/constants';
+import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
+import { contact } from '../utils/constants';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -22,17 +20,10 @@ const PageContainer = styled(Box)(({ theme }) => ({
 
 const ImageBox = styled(Box)(() => ({
     display: 'flex',
-    alignItems: 'center',
-    marginLeft: '3rem',
-    //borderRadius: '12px',
 }));
 
 const Image1Container = styled(Box)(() => ({
-    height: '330px',
-    borderRadius: '12px',
-    //boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
-    transition: '0.25s',
-    overflow: 'hidden'
+    height: '300px',
 }));
 
 const ContentContainer = styled(Box)(() => ({
@@ -67,14 +58,6 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
             <ContentContainer>
                 <BlackBox>
-
-                    {/* <ImageBox>
-                        <Image1Container>
-                            <Link to="/written-work">
-                                <img className="portfolio-img" src={portfolio} />
-                            </Link>
-                        </Image1Container>
-                    </ImageBox> */}
 
                     <TextStack
                         sx={{
@@ -190,31 +173,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 ...
                             </Typography>
                         </Box>
-
-
-                        {/* <Box
-                            display="flex"
-                            alignItems="flex-start"
-                            gap={1}
-                            sx={{
-                                my: 1.75,
-                            }}
-                        >
-                            <Typography
-                                variant='body1'
-                                sx={{
-                                    fontSize: '1.125rem',
-                                    color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
-                                }}
-                            >
-                                Click on my portfolio to see some of my work!
-                            </Typography>
-                            <EastRoundedIcon
-                                sx={{
-                                    color: '#e6e6e6',
-                                }}
-                            />
-                        </Box> */}
+                        
                     </TextStack>
 
                     <ImageBox>
@@ -226,7 +185,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 </BlackBox>
             </ContentContainer>
 
-            <Footer darkModeEnabled={darkModeEnabled} />
+            <DesktopFooter darkModeEnabled={darkModeEnabled} />
 
         </PageContainer>
     );

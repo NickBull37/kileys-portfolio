@@ -1,8 +1,8 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
-import { Box, Stack, Paper, Typography } from '@mui/material';
-import { DesktopNavbar, MobileNavbar, Footer } from '../components/index';
+import { Box, Stack, Typography } from '@mui/material';
+import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
 import { portfolio } from '../utils/constants';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 
@@ -129,7 +129,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 </BlackBox>
             </ContentContainer>
 
-            <Footer darkModeEnabled={darkModeEnabled} />
+            <DesktopFooter darkModeEnabled={darkModeEnabled} />
 
         </PageContainer>
     );

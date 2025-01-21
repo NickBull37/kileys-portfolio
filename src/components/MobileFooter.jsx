@@ -1,75 +1,76 @@
 import React from 'react';
+import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { Box, Button, Typography } from '@mui/material';
 import colors from '../utils/colors';
 
-const Footer = ({ darkModeEnabled }) => {
+const FooterLink = styled(Typography)(() => ({
+    borderBottom: '1px solid #999999',
+}));
+
+const MobileFooter = ({ darkModeEnabled }) => {
     return (
         <Box
-            display="flex"
             justifyContent="center"
-            gap={{ xs: 3, md: 8 }}
+            gap={3}
             sx={{
-                flexDirection: { xs: 'column', md: 'row' },
-                py: { xs: '2rem', md: '0.75rem' },
+                display: { xs: 'flex', md: 'none' },
+                flexDirection: 'column',
+                py: '2rem',
                 bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav,
                 borderTop: '1px solid #000',
             }}
         >
             <Button>
                 <Link to="/">
-                    <Typography
+                    <FooterLink
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         Home
-                    </Typography>
+                    </FooterLink>
                 </Link>
             </Button>
             <Button>
-                <Link to="/about-me">
-                    <Typography
+                <Link to="/about-me-mobile">
+                    <FooterLink
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         About Me
-                    </Typography>
+                    </FooterLink>
                 </Link>
             </Button>
             <Button>
                 <Link to="/written-work">
-                    <Typography
+                    <FooterLink
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         Written Work
-                    </Typography>
+                    </FooterLink>
                 </Link>
             </Button>
             <Button>
-                <Link to="/contact">
-                    <Typography
+                <Link to="/contact-mobile">
+                    <FooterLink
                         variant='body2'
                         sx={{
                             color: darkModeEnabled ? colors.white : colors.black,
-                            borderBottom: { xs: '1px solid #999999', md: 'none' }
                         }}
                     >
                         Contact
-                    </Typography>
+                    </FooterLink>
                 </Link>
             </Button>
         </Box>
     );
 }
 
-export default Footer;
+export default MobileFooter;
