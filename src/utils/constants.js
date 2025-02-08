@@ -11,6 +11,8 @@ export const contact = require('../images/contact.png');
 
 export const borderImgDark = require('../images/custom-border-dark.png');
 export const borderImgLight = require('../images/custom-border-light.png');
+export const leafBorderDark = require('../images/leaf-border-dark.png');
+export const leafBorderLight = require('../images/leaf-border-light.png');
 
 // Article Previews
 export const article1 = require('../images/article1-preview.jpg');

@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
-import { portfolio, borderImgDark, borderImgLight } from '../utils/constants';
+import { portfolio, borderImgDark, borderImgLight, borderImg2Dark, leafBorderDark, leafBorderLight } from '../utils/constants';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import colors from '../utils/colors';
 
@@ -82,14 +82,14 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 display: darkModeEnabled ? 'block' : 'none'
                             }}
                         >
-                            <img className="custom-border-img" src={borderImgDark} />
+                            <img className="custom-border-img" src={leafBorderDark} />
                         </BorderImageContainer>
                         <BorderImageContainer
                             sx={{
                                 display: darkModeEnabled ? 'none' : 'block'
                             }}
                         >
-                            <img className="custom-border-img" src={borderImgLight} />
+                            <img className="custom-border-img" src={leafBorderLight} />
                         </BorderImageContainer>
                     </ImageBox>
 
