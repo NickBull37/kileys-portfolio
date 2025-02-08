@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.1727f51a.css",
-    "main.js": "/kileys-portfolio/static/js/main.48b93fae.js",
+    "main.css": "/kileys-portfolio/static/css/main.9df1f735.css",
+    "main.js": "/kileys-portfolio/static/js/main.3c7ff51a.js",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
-    "static/media/landing-bg2.png": "/kileys-portfolio/static/media/landing-bg2.f9c6731076e21c1b4ee7.png",
     "static/media/article8-preview.jpg": "/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
+    "static/media/landing-bg2.png": "/kileys-portfolio/static/media/landing-bg2.a223f6abc9152fde856e.png",
     "static/media/article9-preview.jpg": "/kileys-portfolio/static/media/article9-preview.7bef1942ff6b3763d7c8.jpg",
     "static/media/portfolio.png": "/kileys-portfolio/static/media/portfolio.e38d576abded0b64906e.png",
     "static/media/article3-preview.jpg": "/kileys-portfolio/static/media/article3-preview.0bee41b66a62d38c575e.jpg",
@@ -30,15 +30,17 @@
     "static/media/slate.png": "/kileys-portfolio/static/media/slate.88c6378872ae2573deb9.png",
     "static/media/custom-border-light.png": "/kileys-portfolio/static/media/custom-border-light.56100baca7c3511207f1.png",
     "static/media/article11-preview.png": "/kileys-portfolio/static/media/article11-preview.46aa958ffdabd17412eb.png",
+    "static/media/leaf-border-dark.png": "/kileys-portfolio/static/media/leaf-border-dark.ba6f62ee0fdfffb8ffa2.png",
     "static/media/custom-border-dark.png": "/kileys-portfolio/static/media/custom-border-dark.30d0ac26302657e0c18b.png",
     "static/media/mongabay-dark.png": "/kileys-portfolio/static/media/mongabay-dark.0837ced13898447bf2bd.png",
+    "static/media/leaf-border-light.png": "/kileys-portfolio/static/media/leaf-border-light.bbaea2bcd2c3e3fe9277.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.1727f51a.css.map": "/kileys-portfolio/static/css/main.1727f51a.css.map",
-    "main.48b93fae.js.map": "/kileys-portfolio/static/js/main.48b93fae.js.map"
+    "main.9df1f735.css.map": "/kileys-portfolio/static/css/main.9df1f735.css.map",
+    "main.3c7ff51a.js.map": "/kileys-portfolio/static/js/main.3c7ff51a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1727f51a.css",
-    "static/js/main.48b93fae.js"
+    "static/css/main.9df1f735.css",
+    "static/js/main.3c7ff51a.js"
   ]
 }
