@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.a4b13671.css",
-    "main.js": "/kileys-portfolio/static/js/main.8bb36e0f.js",
+    "main.css": "/kileys-portfolio/static/css/main.1727f51a.css",
+    "main.js": "/kileys-portfolio/static/js/main.48b93fae.js",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/landing-bg2.png": "/kileys-portfolio/static/media/landing-bg2.f9c6731076e21c1b4ee7.png",
     "static/media/article8-preview.jpg": "/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
@@ -28,15 +28,17 @@
     "static/media/article12-preview.png": "/kileys-portfolio/static/media/article12-preview.88f1989fc54217445594.png",
     "static/media/article14-preview.png": "/kileys-portfolio/static/media/article14-preview.97ee0e084dfb3c6abcdd.png",
     "static/media/slate.png": "/kileys-portfolio/static/media/slate.88c6378872ae2573deb9.png",
+    "static/media/custom-border-light.png": "/kileys-portfolio/static/media/custom-border-light.56100baca7c3511207f1.png",
     "static/media/article11-preview.png": "/kileys-portfolio/static/media/article11-preview.46aa958ffdabd17412eb.png",
+    "static/media/custom-border-dark.png": "/kileys-portfolio/static/media/custom-border-dark.30d0ac26302657e0c18b.png",
     "static/media/mongabay-dark.png": "/kileys-portfolio/static/media/mongabay-dark.0837ced13898447bf2bd.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.a4b13671.css.map": "/kileys-portfolio/static/css/main.a4b13671.css.map",
-    "main.8bb36e0f.js.map": "/kileys-portfolio/static/js/main.8bb36e0f.js.map"
+    "main.1727f51a.css.map": "/kileys-portfolio/static/css/main.1727f51a.css.map",
+    "main.48b93fae.js.map": "/kileys-portfolio/static/js/main.48b93fae.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4b13671.css",
-    "static/js/main.8bb36e0f.js"
+    "static/css/main.1727f51a.css",
+    "static/js/main.48b93fae.js"
   ]
 }
