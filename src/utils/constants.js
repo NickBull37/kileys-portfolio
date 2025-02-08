@@ -9,6 +9,9 @@ export const portfolio = require('../images/portfolio.png');
 export const email = require('../images/email.png');
 export const contact = require('../images/contact.png');
 
+export const borderImgDark = require('../images/custom-border-dark.png');
+export const borderImgLight = require('../images/custom-border-light.png');
+
 // Article Previews
 export const article1 = require('../images/article1-preview.jpg');
 export const article2 = require('../images/article2-preview.jpg');

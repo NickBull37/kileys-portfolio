@@ -170,6 +170,10 @@ body {
     position: relative;
 }
 
+.custom-border-img {
+    height: 100%;
+}
+
 .portfolio-img {
     height: 425px;
 }

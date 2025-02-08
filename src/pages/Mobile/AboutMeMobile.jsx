@@ -36,7 +36,7 @@ const MobileTextStack = styled(Stack)(() => ({
     justifyContent: 'center',
     width: '84%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    //backgroundColor: 'rgba(0, 0, 0, 0.7)',
     paddingTop: '320px',
     paddingBottom: '40px',
 }));
@@ -56,14 +56,21 @@ const AboutMeMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     </Image1Container>
                 </MobileImagesContainer>
 
-                <MobileTextStack>
+                <MobileTextStack
+                    sx={{
+                        backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.7)',
+                        boxShadow: darkModeEnabled
+                            ? '0px -2px 3px -1px rgba(0, 0, 0, 0.4), 0px -2px 3px 0px rgba(0, 0, 0, 0.28), 0px -4px 6px 0px rgba(0, 0, 0, 0.24)'
+                            : '0px -2px 3px -1px rgba(0, 0, 0, 0.4), 0px -2px 3px -1px rgba(0, 0, 0, 0.4), 0px -4px 3px 0px rgba(0, 0, 0, 0.28), 0px 0px 6px 0px rgba(0, 0, 0, 0.24)',
+                    }}
+                >
                     <Typography
                         textAlign="center"
                         className='feel-free'
                         sx={{
                             fontSize: '5.5rem',
                             lineHeight: '1',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             mb: 3,
                         }}
                     >
@@ -72,7 +79,7 @@ const AboutMeMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <Typography
                         sx={{
                             fontSize: '1.125rem',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             px: 4,
                             lineHeight: 1.7,
                         }}

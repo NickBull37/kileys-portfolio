@@ -3,8 +3,9 @@ import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
-import { portfolio } from '../utils/constants';
+import { portfolio, borderImgDark, borderImgLight } from '../utils/constants';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import colors from '../utils/colors';
 
 const PageContainer = styled(Box)(({ theme }) => ({
     width: '100%',
@@ -20,6 +21,10 @@ const ImageBox = styled(Box)(() => ({
     display: 'flex',
     alignItems: 'center',
     marginLeft: '3rem',
+}));
+
+const BorderImageContainer = styled(Box)(() => ({
+    height: '100%',
 }));
 
 const Image1Container = styled(Box)(() => ({
@@ -40,19 +45,18 @@ const ContentContainer = styled(Box)(() => ({
     width: '100%',
 }));
 
-const BlackBox = styled(Box)(() => ({
+const SemiTransparentBox = styled(Box)(() => ({
     display: 'flex',
     width: '100%',
     height: '52%',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    padding: '0 8% 0 8%',
+    padding: '0 10% 0 4%',
 }));
 
 const TextStack = styled(Stack)(() => ({
     display: 'flex',
     justifyContent: 'center',
     height: '100%',
-    borderLeft: '1px solid #fff',
+    marginRight: '5rem',
 }));
 
 const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
@@ -63,19 +67,43 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             <MobileNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
 
             <ContentContainer>
-                <BlackBox>
+                <SemiTransparentBox
+                    sx={{
+                        backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.7)',
+                        boxShadow: darkModeEnabled
+                            ? '0px 2px 3px -1px rgba(0, 0, 0, 0.4), 0px 4px 3px 0px rgba(0, 0, 0, 0.28), 0px 0px 6px 0px rgba(0, 0, 0, 0.24)'
+                            : '0px 2px 3px -1px rgba(0, 0, 0, 0.4), 0px -2px 3px -1px rgba(0, 0, 0, 0.4), 0px 4px 3px 0px rgba(0, 0, 0, 0.28), 0px 0px 6px 0px rgba(0, 0, 0, 0.24)',
+                    }}
+                >
+
+                    <ImageBox>
+                        <BorderImageContainer
+                            sx={{
+                                display: darkModeEnabled ? 'block' : 'none'
+                            }}
+                        >
+                            <img className="custom-border-img" src={borderImgDark} />
+                        </BorderImageContainer>
+                        <BorderImageContainer
+                            sx={{
+                                display: darkModeEnabled ? 'none' : 'block'
+                            }}
+                        >
+                            <img className="custom-border-img" src={borderImgLight} />
+                        </BorderImageContainer>
+                    </ImageBox>
 
                     <TextStack
                         sx={{
-                            px: 4
+                            pl: 4,
                         }}
                     >
                         <Typography
                             className='feel-free'
                             sx={{
-                                fontSize: '6rem',
+                                fontSize: '5rem',
                                 lineHeight: '1',
-                                color: darkModeEnabled ? '#fff' : '#fff',
+                                color: darkModeEnabled ? colors.white : colors.black,
                             }}
                         >
                             About Me
@@ -85,8 +113,8 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             variant='body1'
                             sx={{
                                 fontSize: '1.25rem',
-                                color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
-                                my: 1,
+                                color: darkModeEnabled ? colors.gray90 : colors.black,
+                                mb: 1,
                                 lineHeight: '1.55',
                             }}
                         >
@@ -105,14 +133,14 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 variant='body1'
                                 sx={{
                                     fontSize: '1.125rem',
-                                    color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
                                 }}
                             >
                                 Click on my portfolio to see some of my work!
                             </Typography>
                             <EastRoundedIcon
                                 sx={{
-                                    color: '#e6e6e6',
+                                    color: darkModeEnabled ? '#e6e6e6' : '#1a1a1a',
                                 }}
                             />
                         </Box>
@@ -126,7 +154,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         </Image1Container>
                     </ImageBox>
 
-                </BlackBox>
+                </SemiTransparentBox>
             </ContentContainer>
 
             <DesktopFooter darkModeEnabled={darkModeEnabled} />

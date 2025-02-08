@@ -40,7 +40,7 @@ const MobileTextStack = styled(Stack)(() => ({
     justifyContent: 'center',
     width: '84%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    // backgroundColor: 'rgba(0, 0, 0, 0.7)',
     paddingTop: '220px',
     paddingBottom: '40px',
 }));
@@ -60,14 +60,21 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     </Image1Container>
                 </MobileImagesContainer>
 
-                <MobileTextStack>
+                <MobileTextStack
+                    sx={{
+                        backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.7)',
+                        boxShadow: darkModeEnabled
+                            ? '0px -2px 3px -1px rgba(0, 0, 0, 0.4), 0px -2px 3px 0px rgba(0, 0, 0, 0.28), 0px -4px 6px 0px rgba(0, 0, 0, 0.24)'
+                            : '0px -2px 3px -1px rgba(0, 0, 0, 0.4), 0px -2px 3px -1px rgba(0, 0, 0, 0.4), 0px -4px 3px 0px rgba(0, 0, 0, 0.28), 0px 0px 6px 0px rgba(0, 0, 0, 0.24)',
+                    }}
+                >
                     <Typography
                         textAlign="center"
                         className='feel-free'
                         sx={{
                             fontSize: '5.5rem',
                             lineHeight: '1',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             mb: 3,
                         }}
                     >
@@ -85,12 +92,15 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         >
                             <MailOutlineRoundedIcon
                                 fontSize='small'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
+                                }}
                             />
                             <Typography
                                 variant='body2'
                                 sx={{
                                     fontSize: '1.125rem',
-                                    color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
                                     my: 1,
                                 }}
                             >
@@ -104,12 +114,15 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         >
                             <PhoneRoundedIcon
                                 fontSize='small'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
+                                }}
                             />
                             <Typography
                                 variant='body2'
                                 sx={{
                                     fontSize: '1.125rem',
-                                    color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
                                     my: 1,
                                 }}
                             >
@@ -124,12 +137,15 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         >
                             <FacebookIcon
                                 fontSize='small'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
+                                }}
                             />
                             <Typography
                                 variant='body2'
                                 sx={{
                                     fontSize: '1.125rem',
-                                    color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
                                     my: 1,
                                 }}
                             >
@@ -144,12 +160,15 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         >
                             <XIcon
                                 fontSize='small'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
+                                }}
                             />
                             <Typography
                                 variant='body2'
                                 sx={{
                                     fontSize: '1.125rem',
-                                    color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
                                     my: 1,
                                 }}
                             >
@@ -164,12 +183,15 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         >
                             <LinkedInIcon
                                 fontSize='small'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
+                                }}
                             />
                             <Typography
                                 variant='body2'
                                 sx={{
                                     fontSize: '1.125rem',
-                                    color: darkModeEnabled ? '#e6e6e6' : '#e6e6e6',
+                                    color: darkModeEnabled ? colors.gray90 : colors.black,
                                     my: 1,
                                 }}
                             >
