@@ -28,7 +28,6 @@ const BorderImageContainer = styled(Box)(() => ({
 }));
 
 const Image1Container = styled(Box)(() => ({
-    height: '425px',
     borderRadius: '4px',
     boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
     transition: '0.25s',
@@ -49,7 +48,6 @@ const SemiTransparentBox = styled(Box)(() => ({
     display: 'flex',
     width: '100%',
     height: '52%',
-    padding: '0 10% 0 4%',
 }));
 
 const TextStack = styled(Stack)(() => ({
@@ -68,6 +66,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
             <ContentContainer>
                 <SemiTransparentBox
+                    className='aboutme-transparent-box'
                     sx={{
                         backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.7)',
                         boxShadow: darkModeEnabled
@@ -99,10 +98,8 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         }}
                     >
                         <Typography
-                            className='feel-free'
+                            className='page-header'
                             sx={{
-                                fontSize: '5rem',
-                                lineHeight: '1',
                                 color: darkModeEnabled ? colors.white : colors.black,
                             }}
                         >
@@ -147,7 +144,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     </TextStack>
 
                     <ImageBox>
-                        <Image1Container>
+                        <Image1Container className='portfolio-img-container'>
                             <Link to="/written-work">
                                 <img className="portfolio-img" src={portfolio} />
                             </Link>

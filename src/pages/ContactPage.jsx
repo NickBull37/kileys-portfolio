@@ -28,7 +28,7 @@ const BorderImageContainer = styled(Box)(() => ({
 }));
 
 const Image1Container = styled(Box)(() => ({
-    height: '300px',
+    // height: '300px',
 }));
 
 const ContentContainer = styled(Box)(() => ({
@@ -43,7 +43,7 @@ const SemiTransparentBox = styled(Box)(() => ({
     justifyContent: 'space-between',
     width: '100%',
     height: '52%',
-    padding: '0 8% 0 7%',
+    // padding: '0 8% 0 7%',
 }));
 
 const TextStack = styled(Stack)(() => ({
@@ -62,6 +62,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
             <ContentContainer>
                 <SemiTransparentBox
+                    className='contact-transparent-box'
                     sx={{
                         backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.7)',
                         boxShadow: darkModeEnabled
@@ -95,10 +96,8 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             }}
                         >
                             <Typography
-                                className='feel-free'
+                                className='page-header'
                                 sx={{
-                                    fontSize: '5rem',
-                                    lineHeight: '1',
                                     color: darkModeEnabled ? colors.white : colors.black,
                                 }}
                             >
@@ -223,7 +222,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     </Box>
 
                     <ImageBox>
-                        <Image1Container>
+                        <Image1Container className='contact-img-container'>
                             <img className="contact-img" src={contact} />
                         </Image1Container>
                     </ImageBox>

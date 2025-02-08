@@ -120,22 +120,23 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 >
                     <Typography
                         textAlign="center"
-                        className='feel-free'
+                        className='homepage-header'
                         sx={{
-                            fontSize: '6rem',
-                            lineHeight: '1',
+                            // fontSize: '6rem',
+                            // lineHeight: '1',
                             color: darkModeEnabled ? colors.white : colors.black,
-                            mb: 4,
+                            // mb: 4,
                         }}
                     >
                         Kiley Price
                     </Typography>
                     <Typography
+                        className='homepage-subheader'
                         textAlign="center"
                         sx={{
-                            fontSize: '1.25rem',
+                            //fontSize: '1.25rem',
                             color: darkModeEnabled ? colors.white : colors.black,
-                            mb: 4.5,
+                            //mb: 4.5,
                             borderTop: '1px solid #808080',
                             borderBottom: '1px solid #808080',
                         }}
@@ -143,11 +144,12 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         JOURNALIST / WRITER
                     </Typography>
                     <Typography
+                        className='homepage-text'
                         sx={{
-                            fontSize: '1.125rem',
+                            //fontSize: '1.125rem',
                             color: darkModeEnabled ? colors.white : colors.black,
-                            px: 4,
-                            lineHeight: 1.7,
+                            //px: 4,
+                            //lineHeight: 1.7,
                         }}
                     >
                         Welcome to my website! I'm a reporter at <i>Inside Climate News</i>, where I author the <i>Today's Climate</i> newsletter. I cover the most urgent climate stories shaping our world, from biodiversity loss to extreme weather events. My work has been featured in renowned publications like <i>National Geographic</i>, <i>Grist</i>, <i>TIME Magazine</i>, <i>Scientific American</i>, and more.

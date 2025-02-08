@@ -138,6 +138,31 @@ body {
     font-style: normal!important;
 }
 
+/* ------------------- 2.3 Styled Headers ------------------- */
+.page-header {
+    font-family: Feelfree!important;
+    line-height: 1!important;
+    font-size: 6.5rem!important;
+}
+
+.homepage-header {
+    font-family: Feelfree!important;
+    line-height: 1!important;
+    font-size: 7rem!important;
+    margin-bottom: 3.25rem!important;
+}
+
+.homepage-subheader {
+    font-size: 1.55rem!important;
+    margin-bottom: 50px!important;
+}
+
+.homepage-text {
+    font-size: 1.25rem!important;
+    line-height: 1.7!important;
+    padding: 0 48px!important;
+}
+
 
 /********************************************************************************************************************************************
 ************************************************************** 4. LANDING PAGE **************************************************************
@@ -174,16 +199,8 @@ body {
     height: 100%;
 }
 
-.portfolio-img {
-    height: 425px;
-}
-
 .portfolio-mobile-img {
     height: 225px;
-}
-
-.contact-img {
-    height: 300px;
 }
 
 .contact-mobile-img {
@@ -251,6 +268,20 @@ body {
 
 
 /********************************************************************************************************************************************
+**************************************************************** #. IMAGES ******************************************************************
+********************************************************************************************************************************************/
+.portfolio-img-container,
+.portfolio-img {
+    height: 525px;
+}
+
+.contact-img-container,
+.contact-img {
+    height: 360px;
+}
+
+
+/********************************************************************************************************************************************
 **************************************************************** 4. NAVBAR ******************************************************************
 ********************************************************************************************************************************************/
 .nav-logo {
@@ -302,15 +333,8 @@ body {
 /********************************************************************************************************************************************
 **************************************************************** AboutMe Page ******************************************************************
 ********************************************************************************************************************************************/
-.about-stack {
-    height: calc(100% - 60px);
-    width: 100%;
-    padding-top: 310px;
-}
-
-.about-styled-paper {
-    max-width: 850px;
-    margin: 0;
+.aboutme-transparent-box {
+    padding: 0 14% 0 7%;
 }
 
 
@@ -318,15 +342,8 @@ body {
 /********************************************************************************************************************************************
 **************************************************************** Contact Page ******************************************************************
 ********************************************************************************************************************************************/
-.contact-stack {
-    height: calc(100% - 60px);
-    width: 100%;
-    padding-top: 310px;
-}
-
-.contact-styled-paper {
-    max-width: 850px;
-    min-width: 500px;
+.contact-transparent-box {
+    padding: 0 10% 0 8%;
 }
 
 
@@ -376,6 +393,48 @@ body {
     .contact-styled-paper {
         max-width: 850px;
         min-width: 500px;
+    }
+
+    .portfolio-img-container,
+    .portfolio-img {
+        height: 425px;
+    }
+
+    .contact-img-container,
+    .contact-img {
+        height: 300px;
+    }
+
+    .page-header {
+        font-family: Feelfree!important;
+        line-height: 1!important;
+        font-size: 5rem!important;
+    }
+
+    .homepage-header {
+        font-family: Feelfree!important;
+        line-height: 1!important;
+        font-size: 6rem!important;
+        margin-bottom: 2rem!important;
+    }
+
+    .homepage-subheader {
+        font-size: 1.25rem!important;
+        margin-bottom: 40px!important;
+    }
+
+    .homepage-text {
+        font-size: 1.125rem!important;
+        line-height: 1.7!important;
+        padding: 0 32px!important;
+    }
+
+    .aboutme-transparent-box {
+        padding: 0 10% 0 4%;
+    }
+
+    .contact-transparent-box {
+        padding: 0 8% 0 7%;
     }
 }
 
