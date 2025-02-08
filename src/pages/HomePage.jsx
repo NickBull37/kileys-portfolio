@@ -74,9 +74,8 @@ const TextStack = styled(Stack)(() => ({
     position: 'static',
     display: 'flex',
     justifyContent: 'center',
-    width: '25%',
+    width: '24%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
 }));
 
 const MobileTextStack = styled(Stack)(() => ({
@@ -84,7 +83,7 @@ const MobileTextStack = styled(Stack)(() => ({
     justifyContent: 'center',
     width: '84%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    // backgroundColor: 'rgba(0, 0, 0, 0.7)',
     paddingTop: '300px',
     paddingBottom: '40px',
 }));
@@ -92,7 +91,9 @@ const MobileTextStack = styled(Stack)(() => ({
 const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
     return (
-        <PageContainer className='bg-img'>
+        <PageContainer
+            className='bg-img'
+        >
 
             <DesktopNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
             <MobileNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
@@ -108,14 +109,22 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     </Image2Container>
                 </ImagesContainer>
 
-                <TextStack>
+                <TextStack
+                    sx={{
+                        backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.65)',
+                        // offset-x :: offset-y :: blur-radius :: spread-radius :: color
+                        boxShadow: darkModeEnabled
+                            ? '0px -4px 4px -1px rgba(0, 0, 0, 0.6), 0px -4px 5px 0px rgba(0, 0, 0, 0.35), 0px -4px 6px 0px rgba(0, 0, 0, 0.50)'
+                            : '0px -4px 4px -1px rgba(102, 102, 102, 0.6), 0px -4px 5px 0px rgba(102, 102, 102, 0.35), 0px -4px 6px 0px rgba(102, 102, 102, 0.50)',
+                    }}
+                >
                     <Typography
                         textAlign="center"
                         className='feel-free'
                         sx={{
                             fontSize: '6rem',
                             lineHeight: '1',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             mb: 4,
                         }}
                     >
@@ -125,7 +134,7 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         textAlign="center"
                         sx={{
                             fontSize: '1.25rem',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             mb: 4.5,
                             borderTop: '1px solid #808080',
                             borderBottom: '1px solid #808080',
@@ -136,7 +145,7 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <Typography
                         sx={{
                             fontSize: '1.125rem',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             px: 4,
                             lineHeight: 1.7,
                         }}
@@ -157,14 +166,22 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     </Image2Container>
                 </MobileImagesContainer>
 
-                <MobileTextStack>
+                <MobileTextStack
+                    sx={{
+                        backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.65)',
+                        // offset-x :: offset-y :: blur-radius :: spread-radius :: color
+                        boxShadow: darkModeEnabled
+                            ? '0px -4px 4px -1px rgba(0, 0, 0, 0.6), 0px -4px 5px 0px rgba(0, 0, 0, 0.35), 0px -4px 6px 0px rgba(0, 0, 0, 0.50)'
+                            : '0px -4px 4px -1px rgba(102, 102, 102, 0.6), 0px -4px 5px 0px rgba(102, 102, 102, 0.35), 0px -4px 6px 0px rgba(102, 102, 102, 0.50)',
+                    }}
+                >
                     <Typography
                         textAlign="center"
                         className='feel-free'
                         sx={{
                             fontSize: '5rem',
                             lineHeight: '1',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             mb: 3,
                         }}
                     >
@@ -174,7 +191,7 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         textAlign="center"
                         sx={{
                             fontSize: '1.125rem',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             mb: 4,
                             borderTop: '1px solid #808080',
                             borderBottom: '1px solid #808080',
@@ -185,7 +202,7 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     <Typography
                         sx={{
                             fontSize: '1.125rem',
-                            color: colors.white,
+                            color: darkModeEnabled ? colors.white : colors.black,
                             px: 4,
                             lineHeight: 1.7,
                         }}

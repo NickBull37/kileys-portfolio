@@ -30,8 +30,8 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
     return (
         <Box
             sx={{
+                position: 'relative',
                 display: { xs: 'flex', md: 'none' },
-                // pb: '2.5rem'
             }}
         >
             <AppBar position="static" elevation={8}
@@ -41,17 +41,6 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
             >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        {/* <Typography
-                            className='feel-free'
-                            sx={{
-                                color: darkModeEnabled ? colors.white : colors.black,
-                                flexGrow: 1,
-                                fontSize: '1.875rem',
-                                ml: 1
-                            }}
-                        >
-                            KileyPrice.com
-                        </Typography> */}
                         <LogoContainer>
                             <Link to="/">
                                 <img
