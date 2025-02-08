@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Box, Stack, Typography, Card, CardContent, CardMedia, IconButton } from '@mui/material';
+import { Box, Stack, Typography, Card, CardContent, CardMedia, IconButton, Chip } from '@mui/material';
 import { article1, article2, article3, article4, article5, article6, article7, article8, article9, article10, article11, article12, article13, article14, article15, article16, article17 } from '../utils/constants';
 import { DesktopNavbar, MobileNavbar, DesktopFooter, MobileFooter } from '../components/index';
 import { insideClimateNewsDark, insideClimateNewsLight, liveScienceDark, liveScienceLight, mongabayDark, mongabayLight } from '../utils/constants';
@@ -8,6 +8,10 @@ import { natGeo, time, e360, slate } from '../utils/constants';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import PetsOutlinedIcon from '@mui/icons-material/PetsOutlined';
+import ParkOutlinedIcon from '@mui/icons-material/ParkOutlined';
 import colors from '../utils/colors';
 
 const PageContainer = styled(Box)(() => ({
@@ -42,6 +46,27 @@ const ArticleContent = styled(CardContent)(() => ({
     padding: '12px 20px 12px 16px',
     '&:last-child': {
         paddingBottom: '8px',
+    },
+}));
+
+const SubTagBox = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    [theme.breakpoints.down('md')]: {
+        flexDirection: 'column',
+    },
+}));
+
+const TagBox = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    gap: 8,
+    flexDirection: 'row',
+    [theme.breakpoints.down('md')]: {
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        marginTop: 4,
+        marginBottom: 16
     },
 }));
 
@@ -184,15 +209,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    October 20, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        October 20, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Wildlife Conservation"
+                                            size="small"
+                                            icon={
+                                                <PetsOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#00802b',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -247,20 +310,41 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                     alignItems="center"
                                     gap={1}
                                     sx={{
-                                        mb: 1.5
+                                        mb: 2
                                     }}
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    September 20, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>8 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        September 20, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>8 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Technology & Innovation"
+                                            size="small"
+                                            icon={
+                                                <ScienceOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#3366ff',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -320,15 +404,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    February 9, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        February 9, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Health & Wellness"
+                                            size="small"
+                                            icon={
+                                                <FavoriteBorderOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#ff3385',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -388,15 +510,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    October 10, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        October 10, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Wildlife Conservation"
+                                            size="small"
+                                            icon={
+                                                <PetsOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#00802b',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -456,15 +599,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    July 9, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        July 9, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Health & Wellness"
+                                            size="small"
+                                            icon={
+                                                <FavoriteBorderOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#ff3385',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -524,15 +688,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    October 29, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        October 29, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -592,15 +777,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    October 4, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        October 4, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Wildlife Conservation"
+                                            size="small"
+                                            icon={
+                                                <PetsOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#00802b',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -660,15 +883,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    October 1, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        October 1, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -728,15 +972,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="climate-news-vector" src={darkModeEnabled ? insideClimateNewsDark : insideClimateNewsLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    May 31, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        May 31, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Technology & Innovation"
+                                            size="small"
+                                            icon={
+                                                <ScienceOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#3366ff',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -825,15 +1090,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="natgeo-vector" src={natGeo}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    May 25, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        May 25, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>9 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Wildlife Conservation"
+                                            size="small"
+                                            icon={
+                                                <PetsOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#00802b',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -893,15 +1179,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="time-vector" src={time}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    January 17, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>6 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        January 17, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>6 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -961,15 +1268,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="time-vector" src={time}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    January 25, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        January 25, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Health & Wellness"
+                                            size="small"
+                                            icon={
+                                                <FavoriteBorderOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#ff3385',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -1029,15 +1374,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="natgeo-vector" src={e360}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    May 25, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>5 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        May 25, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>5 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Wildlife Conservation"
+                                            size="small"
+                                            icon={
+                                                <PetsOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#00802b',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -1097,15 +1480,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="livescience-vector" src={darkModeEnabled ? liveScienceDark : liveScienceLight}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    July 15, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        July 15, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Technology & Innovation"
+                                            size="small"
+                                            icon={
+                                                <ScienceOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#3366ff',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -1165,15 +1586,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="slate-vector" src={slate}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    January 22, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>6 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        January 22, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<i>6 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Technology & Innovation"
+                                            size="small"
+                                            icon={
+                                                <ScienceOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#3366ff',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -1233,15 +1692,36 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="mongabay-vector" src={darkModeEnabled ? mongabayDark : mongabayDark}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    August 13, 2018&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        August 13, 2018&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{
@@ -1302,15 +1782,53 @@ const WrittenWorkPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 >
                                     <img className="natgeo-vector" src={natGeo}></img>
                                 </Box>
-                                <SubText
-                                    variant="subtitle1"
-                                    component="div"
-                                    sx={{
-                                        color: darkModeEnabled ? '#e6e6e6' : '#000',
-                                    }}
-                                >
-                                    March 2, 2021&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
-                                </SubText>
+                                <SubTagBox>
+                                    <SubText
+                                        variant="subtitle1"
+                                        component="div"
+                                        sx={{
+                                            color: darkModeEnabled ? '#e6e6e6' : '#000',
+                                        }}
+                                    >
+                                        March 2, 2021&nbsp;&nbsp;-&nbsp;&nbsp;<i>7 min read</i>
+                                    </SubText>
+                                    <TagBox>
+                                        <Chip
+                                            label="Environmental Impact"
+                                            size="small"
+                                            icon={
+                                                <ParkOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#cc6600',
+                                            }}
+                                        />
+                                        <Chip
+                                            label="Wildlife Conservation"
+                                            size="small"
+                                            icon={
+                                                <PetsOutlinedIcon
+                                                    fontSize='small'
+                                                    color='primary'
+                                                    sx={{
+                                                        color: '#fff',
+                                                    }}
+                                                />
+                                            }
+                                            sx={{
+                                                color: '#fff',
+                                                backgroundColor: '#00802b',
+                                            }}
+                                        />
+                                    </TagBox>
+                                </SubTagBox>
                                 <PreviewText
                                     variant='body2'
                                     sx={{

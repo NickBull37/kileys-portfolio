@@ -30,7 +30,7 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 // offset-x offset-y blur-radius spread-radius color
                 boxShadow: darkModeEnabled
                     ? '0px 2px 4px -1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.35), 0px 1px 10px 0px rgba(0, 0, 0, 0.50)'
-                    : '0px 2px 4px -1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.35), 0px 1px 10px 0px rgba(0, 0, 0, 0.50)',
+                    : '0px 2px 4px -1px rgba(102, 102, 102, 0.6), 0px 4px 5px 0px rgba(102, 102, 102, 0.35), 0px 1px 10px 0px rgba(102, 102, 102, 0.50)',
             }}
         >
             <LogoContainer>

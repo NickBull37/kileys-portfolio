@@ -5,6 +5,7 @@ import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
 import { portfolio, borderImgDark, borderImgLight, borderImg2Dark, leafBorderDark, leafBorderLight } from '../utils/constants';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
 import colors from '../utils/colors';
 
 const PageContainer = styled(Box)(({ theme }) => ({
@@ -126,6 +127,12 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 my: 1.75,
                             }}
                         >
+                            <AutoStoriesOutlinedIcon
+                                sx={{
+                                    color: darkModeEnabled ? '#e6e6e6' : '#1a1a1a',
+                                    mr: 0.5
+                                }}
+                            />
                             <Typography
                                 variant='body1'
                                 sx={{
@@ -138,6 +145,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             <EastRoundedIcon
                                 sx={{
                                     color: darkModeEnabled ? '#e6e6e6' : '#1a1a1a',
+                                    ml: 0.75
                                 }}
                             />
                         </Box>
