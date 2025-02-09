@@ -96,7 +96,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             }}
                         >
                             <Typography
-                                className='page-header'
+                                className='contact-header'
                                 sx={{
                                     color: darkModeEnabled ? colors.white : colors.black,
                                 }}

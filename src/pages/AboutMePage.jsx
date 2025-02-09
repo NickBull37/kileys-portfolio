@@ -99,7 +99,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         }}
                     >
                         <Typography
-                            className='page-header'
+                            className='aboutme-header'
                             sx={{
                                 color: darkModeEnabled ? colors.white : colors.black,
                             }}

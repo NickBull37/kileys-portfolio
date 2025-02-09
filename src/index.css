@@ -4,28 +4,51 @@
 /*
     1. ROOT VARIABLES
         1.1 Colors
-        1.2 Text Size
+        1.2 Font Size
+        1.3 Color Palette
 
     2. DEFAULT STYLES
         2.1 Default page styling
-        2.2 Default font styling
-        2.3 Default component styling
-        2.4 Additional fonts
 
-    3. GENERIC STYLES
-        3.1 Spacing
-        3.2 Color
-        3.3 Display
-        3.4 Typography
+    3. ADDED FONTS
 
-    4. TYPOGRAPHY
+    4. IMAGES / ICONS
+    	4.1 App Images
+    	4.2 Homepage Images
+    	4.3 About Me Images
+    	4.4 Contact Images
+    	4.5 Portfolio Images
+    	4.6 Image Media Queries
 
-    5. FOOTER
+    5. TYPOGRAPHY
+    	5.1 Font Family Styling
+    	5.2 Font Color Styling
+    	5.3 Styled Headers
+    	5.4 Typography Media Queries
 
-    6. MEDIA QUERIES
-        6.1 Tablet View
-        6.2 Mobile View
+    6. NAVBAR
+
+    7. HOMEPAGE
+    	7.1 Homepage Desktop Styles
+
+    8. ABOUTME PAGE
+    	8.1 AboutMe Desktop Styles
+    	8.2 AboutMe Laptop Styles
+    	8.3 AboutMe Tablet Styles
+    	8.4 AboutMe Mobile Styles
+
+    9. CONTACT PAGE
+    	9.1 Contact Desktop Styles
+    	9.2 Contact Laptop Styles
+		9.3 Contact Tablet Styles
+		9.4 Contact Mobile Styles
+
+    10. MEDIA QUERIES
+        10.1 Laptop View
+        10.2 Tablet View
+        10.3 Mobile View
 */
+
 
 /********************************************************************************************************************************************
 ************************************************************ 1. ROOT VARIABLES **************************************************************
@@ -38,11 +61,16 @@
     --white-300: #b3b3b3;
     --white-400: #999999;
 
-    /* Color Palette */
+    /* ----------------- 1.2 Font Size ----------------- */
+    --h1: 32px;
+    --h2: 28px;
+    --h3: 24px;
+    --h4: 20px;
+
+    /* ----------------- 1.3 Color Palette ----------------- */
     --pal-primary: #000;
     --pal-secondary: #000;
     --pal-tertiary: #000;
-
 }
 
 
@@ -50,7 +78,8 @@
 /********************************************************************************************************************************************
 *********************************************************** 2. DEFAULT STYLES ***************************************************************
 ********************************************************************************************************************************************/
-/* ------------------- 2.1 Default page styling ------------------- */
+
+/* ------------------- 2.1 Default Page Styling ------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -71,8 +100,6 @@ html {
 
 body {
     /* Set background color for entire site */
-    /* 15% */
-    /* background: #262626; */
     background: #fff;
 
     /* Set default text color for entire site */
@@ -80,26 +107,10 @@ body {
 }
 
 
-/********************************************************************************************************************************************
-*********************************************************** 3. GENERIC STYLES ***************************************************************
-********************************************************************************************************************************************/
-.bootstrap-icon-fill {
-    fill: #d9d9d9!important;
-}
-
-.bootstrap-icon-fill-code {
-    fill: #00e6cf!important;
-}
-
-.bootstrap-icon-fill-gray {
-    fill: #a6a6a6!important;
-}
-
 
 /********************************************************************************************************************************************
-************************************************************** 4. TYPOGRAPHY ****************************************************************
+************************************************************ 3. ADDED FONTS *****************************************************************
 ********************************************************************************************************************************************/
-/* -------------------- 4.1 Additional Fonts --------------------- */
 @font-face {
     font-family: 'Feelfree';
     src: local('Feelfree'),
@@ -107,42 +118,156 @@ body {
 }
 
 
-/* ------------------- 4.1 Font Family Styling ------------------- */
+
+/********************************************************************************************************************************************
+*********************************************************** 4. IMAGES / ICONS ***************************************************************
+********************************************************************************************************************************************/
+
+/* ------------------- 4.1 App Images ------------------- */
+.bg-img {
+    background-image: url('./images/landing-bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.custom-border-img {
+    height: 100%;
+}
+
+/* ------------------- 4.2 Homepage Images ------------------- */
+.homepage-img {
+    max-height: 450px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px!important;
+    position: relative;
+}
+
+/* ------------------- 4.3 AboutMe Page Images ------------------- */
+.about-img-container,
+.about-img {
+    height: 525px;
+    border-radius: 8px!important;
+}
+
+.about-mobile-img {
+    height: 230px;
+    border-radius: 5px;
+}
+
+/* ------------------- 4.4 Contact Page Images ------------------- */
+.contact-img-container,
+.contact-img {
+    height: 360px;
+}
+
+.contact-mobile-img {
+    height: 200px;
+}
+
+/* ------------------- 4.5 Portfolio Page Images ------------------- */
+.natgeo-vector, .e360-vector, .mongabay-vector {
+    max-height: 40px;
+}
+
+.time-vector, .slate-vector {
+    max-height: 25px;
+}
+
+.livescience-vector {
+    max-height: 30px;
+}
+
+.climate-news-vector {
+    max-height: 20px;
+}
+
+/* ------------------- 4.6 Image Media Queries ------------------- */
+/* LAPTOP VIEW */
+@media only screen and (max-width: 1540px) {
+
+    .about-img-container,
+    .about-img {
+        height: 425px;
+        border-radius: 6px!important;
+    }
+
+    .contact-img-container,
+    .contact-img {
+        height: 300px;
+    }
+}
+
+/* TABLET VIEW */
+@media only screen and (max-width: 821px) {
+
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px) {
+
+    .bg-img {
+        height: 100%;
+    }
+
+}
+
+
+
+/********************************************************************************************************************************************
+************************************************************** 5. TYPOGRAPHY ****************************************************************
+********************************************************************************************************************************************/
+
+/* ------------------- 5.1 Font Family Styling ------------------- */
 .feel-free {
     font-family: Feelfree!important;
 }
 
-.text {
+.roboto {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif!important;
 }
 
-/* ------------------- 2.2 Font Color Styling ------------------- */
+/* ------------------- 5.2 Font Color Styling ------------------- */
 .color-white {
     color: #fff!important;
 }
-.color-code {
-    color: #00e6cf;
+
+/* ------------------- 5.3 Typography Media Queries ------------------- */
+/* LAPTOP VIEW */
+@media only screen and (max-width: 1540px) {
+    
 }
 
-.green-gradient {
-    background: linear-gradient(to right, #0e715e, #10d594);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* font-style: italic!important; */
+/* TABLET VIEW */
+@media only screen and (max-width: 821px) {
+
 }
 
-.green-gradient-2 {
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-style: normal!important;
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px) {
+
 }
 
-/* ------------------- 2.3 Styled Headers ------------------- */
-.page-header {
-    font-family: Feelfree!important;
-    line-height: 1!important;
-    font-size: 6.5rem!important;
+
+
+/********************************************************************************************************************************************
+**************************************************************** 6. NAVBAR ******************************************************************
+********************************************************************************************************************************************/
+
+
+
+/********************************************************************************************************************************************
+*************************************************************** 7. HOMEPAGE *****************************************************************
+********************************************************************************************************************************************/
+
+/* ------------------- 7.1 Homepage Desktop Styles ------------------- */
+.homepage-box {
+    height: calc(100% - 60px);
+    width: 100%;
 }
 
 .homepage-header {
@@ -163,235 +288,8 @@ body {
     padding: 0 48px!important;
 }
 
-
-/********************************************************************************************************************************************
-************************************************************** 4. LANDING PAGE **************************************************************
-********************************************************************************************************************************************/
-.bg-img {
-    background-image: url('./images/landing-bg2.png');
-    background-size: cover; /* Makes sure the image covers the entire element */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
-    width: 100%; /* Adjust as needed */
-    height: 100vh; /* Full viewport height */
-}
-
-.landing-img {
-    max-height: 250px;
-    max-width: 100%; /* Adjust to your container's width */
-    min-width: 200px;
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: contain; /* Ensures the entire image fits inside the container */
-    border-radius: 8px!important;
-}
-
-.landing-img-2 {
-    max-height: 450px;
-    max-width: 100%; /* Adjust to your container's width */
-    /* min-width: 200px; */
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: contain; /* Ensures the entire image fits inside the container */
-    border-radius: 12px!important;
-    position: relative;
-}
-
-.custom-border-img {
-    height: 100%;
-}
-
-
-
-.article-img {
-    max-height: 100px;
-    min-height: 100px;
-    max-width: 120px;
-    min-width: 120px;
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: contain; /* Ensures the entire image fits inside the container */
-    border-radius: 4px!important;
-}
-
-.bootstrap-icon-fill {
-    fill: #d9d9d9!important;
-}
-
-.podcast-link:hover {
-    color: #4d94ff;
-}
-
-.svg-img {
-    max-height: 40px;
-}
-
-.social-icon {
-    height: 20px;
-    width: 20px;
-}
-
-.natgeo-vector {
-    max-height: 40px;
-}
-
-.time-vector {
-    max-height: 25px;
-}
-
-.livescience-vector {
-    max-height: 30px;
-}
-
-.e360-vector {
-    max-height: 40px;
-}
-
-.slate-vector {
-    max-height: 25px;
-}
-
-.mongabay-vector {
-    max-height: 40px;
-}
-
-.climate-news-vector {
-    max-height: 20px;
-}
-.grow-img {
-    flex-grow: 1;
-}
-
-
-
-/********************************************************************************************************************************************
-**************************************************************** #. IMAGES ******************************************************************
-********************************************************************************************************************************************/
-.about-img-container,
-.about-img {
-    height: 525px;
-    border-radius: 8px!important;
-}
-
-.contact-img-container,
-.contact-img {
-    height: 360px;
-}
-
-.about-mobile-img {
-    height: 230px;
-    border-radius: 5px;
-}
-
-.contact-mobile-img {
-    height: 200px;
-}
-
-
-/********************************************************************************************************************************************
-**************************************************************** 4. NAVBAR ******************************************************************
-********************************************************************************************************************************************/
-.nav-logo {
-    border-radius: 4px;
-    box-shadow: 0px 2px 6px 0.2px #000!important;
-    z-index: 1000!important;
-}
-.nav-logo:hover {
-    border-radius: 4px;
-    box-shadow: 0px 2px 10px 0.7px #000!important;
-    z-index: 1000!important;
-}
-.cartographer-logo {
-    /* box-shadow: 0px 2px 6px 0.2px #000!important; */
-    z-index: 1000!important;
-    margin-left: 0.75rem;
-}
-.cartographer-logo:hover {
-    z-index: 1000!important;
-}
-
-
-
-/********************************************************************************************************************************************
-**************************************************************** Landing Page ******************************************************************
-********************************************************************************************************************************************/
-.landing-stack {
-    height: calc(100% - 60px);
-    width: 100%;
-    padding-top: 144px;
-}
-
-.landing-styled-paper {
-    max-width: 930px;
-    margin: 7rem 0;
-}
-
-.landing-title-box {
-    padding: 0 320px;
-}
-
-.homepage-box {
-    height: calc(100% - 60px);
-    width: 100%;
-}
-
-
-
-/********************************************************************************************************************************************
-**************************************************************** AboutMe Page ******************************************************************
-********************************************************************************************************************************************/
-.aboutme-transparent-box {
-    padding: 0 14% 0 7%;
-}
-
-
-
-/********************************************************************************************************************************************
-**************************************************************** Contact Page ******************************************************************
-********************************************************************************************************************************************/
-.contact-transparent-box {
-    padding: 0 10% 0 8%;
-}
-
-
-
-/********************************************************************************************************************************************
-*********************************************************** MEDIA QUERIES ***************************************************************
-********************************************************************************************************************************************/
-
-/* LAPTOP VIEW */
+/* ------------------- 7.2 Homepage Laptop Styles ------------------- */
 @media only screen and (max-width: 1540px) {
-
-    /* Landing page */
-    .landing-stack {
-        height: calc(100% - 60px);
-        width: 100%;
-        padding-top: 100px;
-    }
-
-    .landing-styled-paper {
-        max-width: 930px;
-        margin: 5rem 0;
-    }
-
-    .landing-title-box {
-        padding: 0 200px;
-    }
-
-    /* About Me page */
-    .about-img-container,
-    .about-img {
-        height: 425px;
-        border-radius: 6px!important;
-    }
-
-    .contact-img-container,
-    .contact-img {
-        height: 300px;
-    }
-
-    .page-header {
-        font-family: Feelfree!important;
-        line-height: 1!important;
-        font-size: 5rem!important;
-    }
 
     .homepage-header {
         font-family: Feelfree!important;
@@ -410,14 +308,111 @@ body {
         line-height: 1.7!important;
         padding: 0 32px!important;
     }
+}
+
+/* ------------------- 7.3 Homepage Laptop Styles ------------------- */
+@media only screen and (max-width: 821px) {
+
+}
+
+/* ------------------- 7.4 Homepage Laptop Styles ------------------- */
+@media only screen and (max-width: 600px) {
+
+}
+
+
+
+/********************************************************************************************************************************************
+************************************************************* 8. ABOUTME PAGE ***************************************************************
+********************************************************************************************************************************************/
+
+/* ------------------- 8.1 AboutMe Desktop Styles ------------------- */
+.aboutme-transparent-box {
+    padding: 0 14% 0 7%;
+}
+
+.aboutme-header {
+    font-family: Feelfree!important;
+    line-height: 1!important;
+    font-size: 6.5rem!important;
+}
+
+/* ------------------- 8.2 AboutMe Laptop Styles ------------------- */
+@media only screen and (max-width: 1540px) {
+
+    .aboutme-header {
+        font-family: Feelfree!important;
+        line-height: 1!important;
+        font-size: 5rem!important;
+    }
 
     .aboutme-transparent-box {
         padding: 0 10% 0 4%;
     }
 
+}
+
+/* ------------------- 8.3 AboutMe Tablet Styles ------------------- */
+@media only screen and (max-width: 821px) {
+
+}
+
+/* ------------------- 8.4 AboutMe Mobile Styles ------------------- */
+@media only screen and (max-width: 600px) {
+
+}
+
+
+
+/********************************************************************************************************************************************
+************************************************************* 9. CONTACT PAGE ***************************************************************
+********************************************************************************************************************************************/
+
+/* ------------------- 9.1 Contact Desktop Styles ------------------- */
+.contact-transparent-box {
+    padding: 0 10% 0 8%;
+}
+
+.contact-header {
+    font-family: Feelfree!important;
+    line-height: 1!important;
+    font-size: 6.5rem!important;
+}
+
+/* ------------------- 9.2 Contact Laptop Styles ------------------- */
+@media only screen and (max-width: 1540px) {
+
+    .contact-header {
+        font-family: Feelfree!important;
+        line-height: 1!important;
+        font-size: 5rem!important;
+    }
+
     .contact-transparent-box {
         padding: 0 8% 0 7%;
     }
+
+}
+
+/* ------------------- 9.3 Contact Tablet Styles ------------------- */
+@media only screen and (max-width: 821px) {
+
+}
+
+/* ------------------- 9.4 Contact Mobile Styles ------------------- */
+@media only screen and (max-width: 600px) {
+
+}
+
+
+
+/********************************************************************************************************************************************
+*********************************************************** 10. MEDIA QUERIES ***************************************************************
+********************************************************************************************************************************************/
+
+/* LAPTOP VIEW */
+@media only screen and (max-width: 1540px) {
+
 }
 
 /* TABLET VIEW */
@@ -427,34 +422,5 @@ body {
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 600px) {
-
-    /* Images */
-    .bg-img {
-        height: 100%; /* Add extra height to account for mobile browser UI */
-    }
-
-    .landing-img {
-        max-height: 350px;
-        max-width: 100%; /* Adjust to your container's width */
-        height: auto; /* Maintains the aspect ratio */
-        object-fit: contain; /* Ensures the entire image fits inside the container */
-        border-radius: 8px!important;
-    }
-
-    /* Landing page */
-    .landing-stack {
-        width: 100%;
-        padding-top: 0;
-    }
-
-    .landing-styled-paper {
-        margin: 2rem 1rem 4rem 1rem;
-    }
-
-    .landing-title-box {
-        padding: 10px 20px;
-    }
-
-    /* About Me page */
 
 }

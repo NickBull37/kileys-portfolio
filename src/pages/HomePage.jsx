@@ -102,10 +102,10 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
                 <ImagesContainer>
                     <Image1Container>
-                        <img className="landing-img-2" src={daenerys} />
+                        <img className="homepage-img" src={daenerys} />
                     </Image1Container>
                     <Image2Container>
-                        <img className="landing-img-2" src={daenerys2} />
+                        <img className="homepage-img" src={daenerys2} />
                     </Image2Container>
                 </ImagesContainer>
 
@@ -161,10 +161,10 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
                 <MobileImagesContainer>
                     <Image1Container>
-                        <img className="landing-img-2" src={daenerys} />
+                        <img className="homepage-img" src={daenerys} />
                     </Image1Container>
                     <Image2Container>
-                        <img className="landing-img-2" src={daenerys2} />
+                        <img className="homepage-img" src={daenerys2} />
                     </Image2Container>
                 </MobileImagesContainer>
 
