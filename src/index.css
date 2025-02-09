@@ -157,7 +157,7 @@ body {
 }
 
 .about-mobile-img {
-    height: 230px;
+    height: 240px;
     border-radius: 5px;
 }
 
@@ -320,6 +320,24 @@ body {
 /* ------------------- 7.4 Homepage Mobile Styles ------------------- */
 @media only screen and (max-width: 600px) {
 
+    .homepage-header {
+        font-family: Feelfree!important;
+        line-height: 1!important;
+        font-size: 5rem!important;
+        margin-bottom: 1.5rem!important;
+    }
+
+    .homepage-subheader {
+        font-size: 1.125rem!important;
+        margin-bottom: 40px!important;
+    }
+
+    .homepage-text {
+        font-size: 1.125rem!important;
+        letter-spacing: 0.015em!important;
+        line-height: 1.7!important;
+        padding: 0 28px!important;
+    }
 }
 
 
@@ -396,13 +414,13 @@ body {
         font-family: Feelfree!important;
         line-height: 1!important;
         font-size: 5.5rem!important;
-        margin-bottom: 1.75rem!important;
+        margin-bottom: 1.25rem!important;
     }
 
     .aboutme-text {
         font-size: 1.125rem!important;
         line-height: 1.7!important;
-        margin-bottom: 2rem!important;
+        margin-bottom: 2.5rem!important;
         padding: 0 2rem!important;
     }
 
@@ -482,7 +500,7 @@ body {
         font-family: Feelfree!important;
         line-height: 1!important;
         font-size: 5.5rem!important;
-        margin-bottom: 1.5rem!important;
+        margin-bottom: 1.75rem!important;
     }
 }
 

@@ -22,7 +22,6 @@ const MobileAboutContainer = styled(Box)(() => ({
 const MobileImagesContainer = styled(Box)(() => ({
     position: 'absolute',
     display: 'flex',
-    maxHeight: '230px',
     marginTop: '2.5rem',
 }));
 
