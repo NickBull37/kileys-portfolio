@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
 
-import { HomePage, AboutMePage, WrittenWorkPage, WrittenWorkPage2, ContactPage } from "./pages";
+import { HomePage, AboutMePage, WrittenWorkPage, WrittenWorkPage2, ContactPage, TestPage } from "./pages";
 import { AboutMeMobile, ContactMobile } from "./pages";
 
 const App = () => {
@@ -22,6 +22,8 @@ const App = () => {
 
                 <Route path="/contact" element={<ContactPage darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
                 <Route path="/contact-mobile" element={<ContactMobile darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
+
+                <Route path="/test" element={<TestPage darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
             </Routes>
         </Box>
     );

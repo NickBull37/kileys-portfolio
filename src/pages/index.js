@@ -12,3 +12,5 @@ export { default as WrittenWorkPage2 } from './WrittenWorkPage2';
 
 export { default as ContactPage } from './ContactPage';
 export { default as ContactMobile } from './Mobile/ContactMobile';
+
+export { default as TestPage } from './TestPage';

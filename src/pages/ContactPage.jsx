@@ -93,7 +93,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                     color: darkModeEnabled ? colors.white : colors.black,
                                 }}
                             >
-                                Contact
+                                Contact Me
                             </Typography>
 
                             <Box

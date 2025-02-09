@@ -93,6 +93,16 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 </Link>
             </Button>
 
+            <Button
+                sx={{
+                    color: darkModeEnabled ? colors.white : colors.black,
+                }}
+            >
+                <Link to="/test">
+                    Test
+                </Link>
+            </Button>
+
             <ThemeToggle darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
 
         </Box>

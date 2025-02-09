@@ -109,6 +109,13 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                         </Typography>
                                     </Link>
                                 </MenuItem>
+                                <MenuItem key={'test'} onClick={handleCloseNavMenu}>
+                                    <Link to="/test">
+                                        <Typography textAlign="center">
+                                            Test
+                                        </Typography>
+                                    </Link>
+                                </MenuItem>
                                 <MenuItem key={'contact'} onClick={handleCloseNavMenu}>
                                     <Link to="/contact-mobile">
                                         <Typography textAlign="center">

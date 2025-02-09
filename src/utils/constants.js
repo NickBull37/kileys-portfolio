@@ -1,5 +1,4 @@
 // HomePage Imgs
-export const landing_bg2 = require('../images/landing-bg2.png');
 export const daenerys = require('../images/daenerys.png');
 export const daenerys2 = require('../images/daenerys-2.png');
 export const daenerys3 = require('../images/daenerys-3.jpg');

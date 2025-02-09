@@ -127,7 +127,7 @@ body {
 
 /* ------------------- 4.1 App Images ------------------- */
 .bg-img {
-    background-image: url('./images/landing-bg2.png');
+    background-image: url('./images/mountain-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,6 +172,14 @@ body {
 }
 
 /* ------------------- 4.5 Portfolio Page Images ------------------- */
+
+.portfolio-bg-img {
+    background-image: url('./images/mountain-bg-portfolio.png');
+    background-size: cover!important;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .natgeo-vector, .e360-vector, .mongabay-vector {
     max-height: 40px;
 }
@@ -427,6 +435,136 @@ body {
     .aboutme-subtext {
         font-size: 1rem!important;
         font-style: italic!important;
+    }
+}
+
+
+
+/********************************************************************************************************************************************
+************************************************************ 9. PORTFOLIO PAGE **************************************************************
+********************************************************************************************************************************************/
+
+/* ------------------- 9.1 Portfolio Desktop Styles ------------------- */
+.portfolio-transparent-stack {
+    position: static;
+    display: flex;
+    width: 66%;
+    height: 100%;
+    margin: auto;
+    padding: 0 2.5rem;
+}
+
+.climatenews-text-stack {
+    margin: 4rem 0 1.75rem 0;
+    padding: 0 2.5rem;
+}
+
+.freelance-text-stack {
+    margin: 4rem 0 1rem 0;
+    padding: 0 2.5rem;
+}
+
+.portfolio-header {
+    font-family: "Roboto","Helvetica","Arial",sans-serif!important;
+    line-height: 1.167!important;
+    font-size: 3rem!important;
+    letter-spacing: 0em!important;
+    margin-bottom: 0.375rem!important;
+}
+
+.article-card {
+    width: 340px;
+    margin-bottom: 2rem;
+}
+
+.share-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2.5rem 0 2.75rem 3.5rem;
+}
+
+/* ------------------- 9.2 Portfolio Laptop Styles ------------------- */
+@media only screen and (max-width: 1540px) {
+
+    .portfolio-transparent-stack {
+        position: static;
+        display: flex;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        padding: 0 1.5rem;
+    }
+
+    .climatenews-text-stack {
+        margin: 4rem 0 1.75rem 0;
+        padding: 0 2.5rem;
+    }
+
+    .portfolio-header {
+        font-family: "Roboto","Helvetica","Arial",sans-serif!important;
+        line-height: 1.167!important;
+        font-size: 3rem!important;
+        letter-spacing: 0em!important;
+        margin-bottom: 0.375rem!important;
+    }
+
+    .article-card {
+        width: 340px;
+        margin-bottom: 2rem;
+    }
+
+    .share-btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2.5rem 0 2.5rem 2rem;
+    }
+}
+
+/* ------------------- 9.3 Portfolio Tablet Styles ------------------- */
+@media only screen and (max-width: 821px) {
+    
+}
+
+/* ------------------- 9.4 Portfolio Mobile Styles ------------------- */
+@media only screen and (max-width: 600px) {
+
+    .portfolio-transparent-stack {
+        position: static;
+        display: flex;
+        width: 86%;
+        height: 100%;
+    }
+
+    .climatenews-text-stack {
+        margin: 3rem 0 2rem 0;
+        padding: 0;
+    }
+
+    .freelance-text-stack {
+        margin: 4rem 0 1.25rem 0;
+        padding: 0;
+    }
+
+    .portfolio-header {
+        font-family: "Roboto","Helvetica","Arial",sans-serif!important;
+        line-height: 1.167!important;
+        font-size: 2rem!important;
+        letter-spacing: 0em!important;
+        margin-bottom: 0.375rem!important;
+    }
+
+    .article-card {
+        width: 310px;
+        margin-bottom: 0rem;
+    }
+
+    .share-btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2.5rem 0 2.5rem 0.75rem;
     }
 }
 
