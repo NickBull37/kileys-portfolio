@@ -59,7 +59,7 @@ const SubTagBox = styled(Box)(({ theme }) => ({
 }));
 
 const TagBox = styled(Box)(({ theme }) => ({
-    display: 'flex',
+    display: 'none',
     gap: 8,
     flexDirection: 'row',
     [theme.breakpoints.down('md')]: {
@@ -77,11 +77,11 @@ const TitleText = styled(Typography)(() => ({
 
 const PreviewText = styled(Typography)(() => ({
     marginBottom: '2px',
-    display: '-webkit-box', // Enables a multi-line flexbox container for text
-    WebkitBoxOrient: 'vertical', // Vertical orientation for the text
-    overflow: 'hidden', // Hides overflowing text
-    textOverflow: 'ellipsis', // Ensures text doesn’t break layout
-    WebkitLineClamp: 3, // Limits the text to 3 lines
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    WebkitLineClamp: 3,
     position: 'relative',
     '&::after': {
         content: '""',
@@ -90,7 +90,7 @@ const PreviewText = styled(Typography)(() => ({
         left: 0,
         right: 0,
         height: '2.5em', // Height of the fade effect
-        pointerEvents: 'none', // Prevent interaction with the gradient
+        pointerEvents: 'none',
     },
 }));
 
