@@ -38,14 +38,6 @@ const ContentContainer = styled(Box)(() => ({
     width: '100%',
 }));
 
-const SemiTransparentBox = styled(Box)(() => ({
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%',
-    height: '52%',
-    // padding: '0 8% 0 7%',
-}));
-
 const TextStack = styled(Stack)(() => ({
     display: 'flex',
     justifyContent: 'center',
@@ -61,7 +53,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             <MobileNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
 
             <ContentContainer>
-                <SemiTransparentBox
+                <Box
                     className='contact-transparent-box'
                     sx={{
                         backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.7)',
@@ -107,20 +99,18 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             <Box
                                 display="flex"
                                 alignItems="center"
-                                gap={1}
+                                gap={1.5}
                             >
                                 <MailOutlineRoundedIcon
-                                    fontSize='small'
+                                    className='contact-icon'
                                     sx={{
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
                                     }}
                                 />
                                 <Typography
-                                    variant='body2'
+                                    className='contact-text'
                                     sx={{
-                                        fontSize: '1.125rem',
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
-                                        my: 1,
                                     }}
                                 >
                                     kileyjprice@gmail.com
@@ -129,20 +119,18 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             <Box
                                 display="flex"
                                 alignItems="center"
-                                gap={1}
+                                gap={1.5}
                             >
                                 <PhoneRoundedIcon
-                                    fontSize='small'
+                                    className='contact-icon'
                                     sx={{
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
                                     }}
                                 />
                                 <Typography
-                                    variant='body2'
+                                    className='contact-text'
                                     sx={{
-                                        fontSize: '1.125rem',
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
-                                        my: 1,
                                     }}
                                 >
                                     (555) - 555 - 555
@@ -152,20 +140,18 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             <Box
                                 display="flex"
                                 alignItems="center"
-                                gap={1}
+                                gap={1.5}
                             >
                                 <FacebookIcon
-                                    fontSize='small'
+                                    className='contact-icon'
                                     sx={{
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
                                     }}
                                 />
                                 <Typography
-                                    variant='body2'
+                                    className='contact-text'
                                     sx={{
-                                        fontSize: '1.125rem',
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
-                                        my: 1,
                                     }}
                                 >
                                     ...
@@ -175,20 +161,18 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             <Box
                                 display="flex"
                                 alignItems="center"
-                                gap={1}
+                                gap={1.5}
                             >
                                 <XIcon
-                                    fontSize='small'
+                                    className='contact-icon'
                                     sx={{
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
                                     }}
                                 />
                                 <Typography
-                                    variant='body2'
+                                    className='contact-text'
                                     sx={{
-                                        fontSize: '1.125rem',
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
-                                        my: 1,
                                     }}
                                 >
                                     ...
@@ -198,20 +182,18 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             <Box
                                 display="flex"
                                 alignItems="center"
-                                gap={1}
+                                gap={1.5}
                             >
                                 <LinkedInIcon
-                                    fontSize='small'
+                                    className='contact-icon'
                                     sx={{
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
                                     }}
                                 />
                                 <Typography
-                                    variant='body2'
+                                    className='contact-text'
                                     sx={{
-                                        fontSize: '1.125rem',
                                         color: darkModeEnabled ? colors.gray90 : colors.black,
-                                        my: 1,
                                     }}
                                 >
                                     ...
@@ -227,7 +209,7 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         </Image1Container>
                     </ImageBox>
 
-                </SemiTransparentBox>
+                </Box>
             </ContentContainer>
 
             <DesktopFooter darkModeEnabled={darkModeEnabled} />

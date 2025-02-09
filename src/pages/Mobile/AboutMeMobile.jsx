@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, MobileFooter } from '../../components/index';
 import { daenerys3 } from '../../utils/constants';
+import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
 import colors from '../../utils/colors';
 
 const PageContainer = styled(Box)(() => ({
@@ -65,26 +67,57 @@ const AboutMeMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 >
                     <Typography
                         textAlign="center"
-                        className='feel-free'
+                        className='aboutme-header'
                         sx={{
-                            fontSize: '5.5rem',
-                            lineHeight: '1',
                             color: darkModeEnabled ? colors.white : colors.black,
-                            mb: 3.5,
                         }}
                     >
                         About Me
                     </Typography>
                     <Typography
+                        className='aboutme-text'
                         sx={{
-                            fontSize: '1.125rem',
                             color: darkModeEnabled ? colors.white : colors.black,
-                            px: 4,
-                            lineHeight: 1.7,
                         }}
                     >
                         Hi! I am a reporter at Inside Climate News, where I write the "Today's Climate" newsletter. I write about the most pressing climate-related news happening around the world—from biodiversity loss to extreme weather. My work has appeared in National Geographic, Grist, Time Magazine, Scientific American and more.
                     </Typography>
+
+                    <Box
+                        display="flex"
+                        alignItems="center"
+                        gap={2}
+                        sx={{
+                            px: 4
+                        }}
+                    >
+                        <Typography
+                            className='aboutme-subtext'
+                            sx={{
+                                color: darkModeEnabled ? colors.gray90 : colors.black,
+                            }}
+                        >
+                            Check out my portfolio to see some of my work!
+                        </Typography>
+                        <Link to="/written-work">
+                            <AutoStoriesOutlinedIcon
+                                sx={{
+                                    fontSize: '2.75rem',
+                                    color: darkModeEnabled ? '#e6e6e6' : '#1a1a1a',
+                                    ml: 1,
+                                    padding: '7px',
+                                    borderRadius: '20px',
+                                    transition: '0.25s',
+                                    '&:hover': {
+                                        cursor: 'pointer',
+                                        padding: '7px',
+                                        backgroundColor: darkModeEnabled ? '#333333' : '#999999',
+                                        borderRadius: '20px'
+                                    },
+                                }}
+                            />
+                        </Link>
+                    </Box>
                 </MobileTextStack>
             </MobileAboutContainer>
 

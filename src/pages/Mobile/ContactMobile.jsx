@@ -40,7 +40,6 @@ const MobileTextStack = styled(Stack)(() => ({
     justifyContent: 'center',
     width: '84%',
     height: '100%',
-    // backgroundColor: 'rgba(0, 0, 0, 0.7)',
     paddingTop: '220px',
     paddingBottom: '40px',
 }));
@@ -70,12 +69,9 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 >
                     <Typography
                         textAlign="center"
-                        className='feel-free'
+                        className='contact-header'
                         sx={{
-                            fontSize: '5.5rem',
-                            lineHeight: '1',
                             color: darkModeEnabled ? colors.white : colors.black,
-                            mb: 3,
                         }}
                     >
                         Contact Me
@@ -88,7 +84,7 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         <Box
                             display="flex"
                             alignItems="center"
-                            gap={1}
+                            gap={1.25}
                         >
                             <MailOutlineRoundedIcon
                                 fontSize='small'
@@ -110,7 +106,7 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         <Box
                             display="flex"
                             alignItems="center"
-                            gap={1}
+                            gap={1.25}
                         >
                             <PhoneRoundedIcon
                                 fontSize='small'
@@ -133,7 +129,7 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         <Box
                             display="flex"
                             alignItems="center"
-                            gap={1}
+                            gap={1.25}
                         >
                             <FacebookIcon
                                 fontSize='small'
@@ -156,7 +152,7 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         <Box
                             display="flex"
                             alignItems="center"
-                            gap={1}
+                            gap={1.25}
                         >
                             <XIcon
                                 fontSize='small'
@@ -179,7 +175,7 @@ const ContactMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         <Box
                             display="flex"
                             alignItems="center"
-                            gap={1}
+                            gap={1.25}
                         >
                             <LinkedInIcon
                                 fontSize='small'

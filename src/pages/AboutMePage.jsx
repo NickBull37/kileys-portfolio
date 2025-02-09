@@ -3,8 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
-import { daenerys3, portfolio, leafBorderDark, leafBorderLight } from '../utils/constants';
-import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import { daenerys3, leafBorderDark, leafBorderLight } from '../utils/constants';
 import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
 import colors from '../utils/colors';
 
@@ -31,11 +30,6 @@ const BorderImageContainer = styled(Box)(() => ({
 const Image1Container = styled(Box)(() => ({
     borderRadius: '4px',
     boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
-    // transition: '0.25s',
-    // '&:hover': {
-    //     cursor: 'pointer',
-    //     transform: 'rotate(2deg)',
-    // },
 }));
 
 const ContentContainer = styled(Box)(() => ({
@@ -43,12 +37,6 @@ const ContentContainer = styled(Box)(() => ({
     alignItems: 'center',
     height: 'calc(100% - 60px)',
     width: '100%',
-}));
-
-const SemiTransparentBox = styled(Box)(() => ({
-    display: 'flex',
-    width: '100%',
-    height: '52%',
 }));
 
 const TextStack = styled(Stack)(() => ({
@@ -66,7 +54,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             <MobileNavbar darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />
 
             <ContentContainer>
-                <SemiTransparentBox
+                <Box
                     className='aboutme-transparent-box'
                     sx={{
                         backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.7)',
@@ -108,12 +96,9 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         </Typography>
 
                         <Typography
-                            variant='body1'
+                            className='aboutme-text'
                             sx={{
-                                fontSize: '1.25rem',
                                 color: darkModeEnabled ? colors.gray90 : colors.black,
-                                mb: 1,
-                                lineHeight: '1.55',
                             }}
                         >
                             Hi! I am a reporter at Inside Climate News, where I write the "Today's Climate" newsletter. I write about the most pressing climate-related news happening around the world—from biodiversity loss to extreme weather. My work has appeared in National Geographic, Grist, Time Magazine, Scientific American and more.
@@ -127,10 +112,8 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             }}
                         >
                             <Typography
-                                variant='body1'
+                                className='aboutme-subtext'
                                 sx={{
-                                    fontSize: '1rem',
-                                    fontStyle: 'italic',
                                     color: darkModeEnabled ? colors.gray90 : colors.black,
                                 }}
                             >
@@ -163,7 +146,7 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                         </Image1Container>
                     </ImageBox>
 
-                </SemiTransparentBox>
+                </Box>
             </ContentContainer>
 
             <DesktopFooter darkModeEnabled={darkModeEnabled} />

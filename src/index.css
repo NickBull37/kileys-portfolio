@@ -23,13 +23,15 @@
     5. TYPOGRAPHY
     	5.1 Font Family Styling
     	5.2 Font Color Styling
-    	5.3 Styled Headers
-    	5.4 Typography Media Queries
+    	5.3 Typography Media Queries
 
     6. NAVBAR
 
     7. HOMEPAGE
     	7.1 Homepage Desktop Styles
+    	7.2 Homepage Laptop Styles
+    	7.3 Homepage Tablet Styles
+    	7.4 Homepage Mobile Styles
 
     8. ABOUTME PAGE
     	8.1 AboutMe Desktop Styles
@@ -310,12 +312,12 @@ body {
     }
 }
 
-/* ------------------- 7.3 Homepage Laptop Styles ------------------- */
+/* ------------------- 7.3 Homepage Tablet Styles ------------------- */
 @media only screen and (max-width: 821px) {
 
 }
 
-/* ------------------- 7.4 Homepage Laptop Styles ------------------- */
+/* ------------------- 7.4 Homepage Mobile Styles ------------------- */
 @media only screen and (max-width: 600px) {
 
 }
@@ -328,6 +330,9 @@ body {
 
 /* ------------------- 8.1 AboutMe Desktop Styles ------------------- */
 .aboutme-transparent-box {
+    display: flex;
+    width: 100%;
+    height:45%;
     padding: 0 14% 0 7%;
 }
 
@@ -335,19 +340,46 @@ body {
     font-family: Feelfree!important;
     line-height: 1!important;
     font-size: 6.5rem!important;
+    margin-bottom: 1.25rem!important;
+}
+
+.aboutme-text {
+    font-size: 1.25rem!important;
+    line-height: 1.55!important;
+    margin-bottom: 2rem!important;
+}
+
+.aboutme-subtext {
+    font-size: 1rem!important;
+    font-style: italic!important;
 }
 
 /* ------------------- 8.2 AboutMe Laptop Styles ------------------- */
 @media only screen and (max-width: 1540px) {
 
+    .aboutme-transparent-box {
+        display: flex;
+        width: 100%;
+        height: 52%;
+        padding: 0 10% 0 4%;
+    }
+
     .aboutme-header {
         font-family: Feelfree!important;
         line-height: 1!important;
         font-size: 5rem!important;
+        margin-bottom: 0.5rem!important;
     }
 
-    .aboutme-transparent-box {
-        padding: 0 10% 0 4%;
+    .aboutme-text {
+        font-size: 1.125rem!important;
+        line-height: 1.5!important;
+        margin-bottom: 1rem!important;
+    }
+
+    .aboutme-subtext {
+        font-size: 1rem!important;
+        font-style: italic!important;
     }
 
 }
@@ -360,6 +392,24 @@ body {
 /* ------------------- 8.4 AboutMe Mobile Styles ------------------- */
 @media only screen and (max-width: 600px) {
 
+    .aboutme-header {
+        font-family: Feelfree!important;
+        line-height: 1!important;
+        font-size: 5.5rem!important;
+        margin-bottom: 1.75rem!important;
+    }
+
+    .aboutme-text {
+        font-size: 1.125rem!important;
+        line-height: 1.7!important;
+        margin-bottom: 2rem!important;
+        padding: 0 2rem!important;
+    }
+
+    .aboutme-subtext {
+        font-size: 1rem!important;
+        font-style: italic!important;
+    }
 }
 
 
@@ -370,6 +420,10 @@ body {
 
 /* ------------------- 9.1 Contact Desktop Styles ------------------- */
 .contact-transparent-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45%;
     padding: 0 10% 0 8%;
 }
 
@@ -379,8 +433,25 @@ body {
     font-size: 6.5rem!important;
 }
 
+.contact-text {
+    font-size: 1.25rem!important;
+    margin: 0.5rem 0!important;
+}
+
+.contact-icon {
+    font-size: 1.675rem!important;
+}
+
 /* ------------------- 9.2 Contact Laptop Styles ------------------- */
 @media only screen and (max-width: 1540px) {
+
+    .contact-transparent-box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 52%;
+        padding: 0 8% 0 7%;
+    }
 
     .contact-header {
         font-family: Feelfree!important;
@@ -388,8 +459,13 @@ body {
         font-size: 5rem!important;
     }
 
-    .contact-transparent-box {
-        padding: 0 8% 0 7%;
+    .contact-text {
+        font-size: 1.125rem!important;
+        margin: 0.313rem 0!important;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem!important;
     }
 
 }
@@ -402,6 +478,12 @@ body {
 /* ------------------- 9.4 Contact Mobile Styles ------------------- */
 @media only screen and (max-width: 600px) {
 
+    .contact-header {
+        font-family: Feelfree!important;
+        line-height: 1!important;
+        font-size: 5.5rem!important;
+        margin-bottom: 1.5rem!important;
+    }
 }
 
 
