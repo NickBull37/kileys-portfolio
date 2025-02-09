@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
-import { portfolio, borderImgDark, borderImgLight, borderImg2Dark, leafBorderDark, leafBorderLight } from '../utils/constants';
+import { daenerys3, portfolio, leafBorderDark, leafBorderLight } from '../utils/constants';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
 import colors from '../utils/colors';
@@ -31,11 +31,11 @@ const BorderImageContainer = styled(Box)(() => ({
 const Image1Container = styled(Box)(() => ({
     borderRadius: '4px',
     boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
-    transition: '0.25s',
-    '&:hover': {
-        cursor: 'pointer',
-        transform: 'rotate(2deg)',
-    },
+    // transition: '0.25s',
+    // '&:hover': {
+    //     cursor: 'pointer',
+    //     transform: 'rotate(2deg)',
+    // },
 }));
 
 const ContentContainer = styled(Box)(() => ({
@@ -121,41 +121,45 @@ const AboutMePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
                         <Box
                             display="flex"
-                            alignItems="flex-start"
+                            alignItems="center"
                             gap={1}
                             sx={{
-                                my: 1.75,
                             }}
                         >
-                            <AutoStoriesOutlinedIcon
-                                sx={{
-                                    color: darkModeEnabled ? '#e6e6e6' : '#1a1a1a',
-                                    mr: 0.5
-                                }}
-                            />
                             <Typography
                                 variant='body1'
                                 sx={{
-                                    fontSize: '1.125rem',
+                                    fontSize: '1rem',
+                                    fontStyle: 'italic',
                                     color: darkModeEnabled ? colors.gray90 : colors.black,
                                 }}
                             >
-                                Click on my portfolio to see some of my work!
+                                Check out my portfolio to see some of my work!
                             </Typography>
-                            <EastRoundedIcon
-                                sx={{
-                                    color: darkModeEnabled ? '#e6e6e6' : '#1a1a1a',
-                                    ml: 0.75
-                                }}
-                            />
+                            <Link to="/written-work">
+                                <AutoStoriesOutlinedIcon
+                                    sx={{
+                                        fontSize: '2.75rem',
+                                        color: darkModeEnabled ? '#e6e6e6' : '#1a1a1a',
+                                        ml: 1,
+                                        padding: '7px',
+                                        borderRadius: '20px',
+                                        transition: '0.25s',
+                                        '&:hover': {
+                                            cursor: 'pointer',
+                                            padding: '7px',
+                                            backgroundColor: darkModeEnabled ? '#333333' : '#999999',
+                                            borderRadius: '20px'
+                                        },
+                                    }}
+                                />
+                            </Link>
                         </Box>
                     </TextStack>
 
                     <ImageBox>
-                        <Image1Container className='portfolio-img-container'>
-                            <Link to="/written-work">
-                                <img className="portfolio-img" src={portfolio} />
-                            </Link>
+                        <Image1Container className='about-img-container'>
+                            <img className="about-img" src={daenerys3} />
                         </Image1Container>
                     </ImageBox>
 

@@ -199,13 +199,7 @@ body {
     height: 100%;
 }
 
-.portfolio-mobile-img {
-    height: 225px;
-}
 
-.contact-mobile-img {
-    height: 200px;
-}
 
 .article-img {
     max-height: 100px;
@@ -270,14 +264,24 @@ body {
 /********************************************************************************************************************************************
 **************************************************************** #. IMAGES ******************************************************************
 ********************************************************************************************************************************************/
-.portfolio-img-container,
-.portfolio-img {
+.about-img-container,
+.about-img {
     height: 525px;
+    border-radius: 8px!important;
 }
 
 .contact-img-container,
 .contact-img {
     height: 360px;
+}
+
+.about-mobile-img {
+    height: 230px;
+    border-radius: 5px;
+}
+
+.contact-mobile-img {
+    height: 200px;
 }
 
 
@@ -372,32 +376,10 @@ body {
     }
 
     /* About Me page */
-    .about-stack {
-        height: calc(100% - 60px);
-        width: 100%;
-        padding-top: 200px;
-    }
-    
-    .about-styled-paper {
-        max-width: 850px;
-        margin: 0;
-    }
-
-    /* Contact page */
-    .contact-stack {
-        height: calc(100% - 60px);
-        width: 100%;
-        padding-top: 250px;
-    }
-    
-    .contact-styled-paper {
-        max-width: 850px;
-        min-width: 500px;
-    }
-
-    .portfolio-img-container,
-    .portfolio-img {
+    .about-img-container,
+    .about-img {
         height: 425px;
+        border-radius: 6px!important;
     }
 
     .contact-img-container,
@@ -474,23 +456,5 @@ body {
     }
 
     /* About Me page */
-    .about-stack {
-        width: 100%;
-        padding-top: 0;
-    }
-    
-    .about-styled-paper {
-        margin: 2.5rem 1rem 4rem 1rem;
-    }
 
-    /* Contact page */
-    .contact-stack {
-        width: 100%;
-        padding-top: 0;
-    }
-    
-    .contact-styled-paper {
-        margin: 2.5rem 1rem 4rem 1rem;
-        min-width: 350px;
-    }
 }

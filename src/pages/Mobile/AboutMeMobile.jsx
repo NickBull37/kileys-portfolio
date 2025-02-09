@@ -2,7 +2,7 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, MobileFooter } from '../../components/index';
-import { portfolio } from '../../utils/constants';
+import { daenerys3 } from '../../utils/constants';
 import colors from '../../utils/colors';
 
 const PageContainer = styled(Box)(() => ({
@@ -20,7 +20,7 @@ const MobileAboutContainer = styled(Box)(() => ({
 const MobileImagesContainer = styled(Box)(() => ({
     position: 'absolute',
     display: 'flex',
-    maxHeight: '250px',
+    maxHeight: '230px',
     marginTop: '2.5rem',
 }));
 
@@ -36,7 +36,6 @@ const MobileTextStack = styled(Stack)(() => ({
     justifyContent: 'center',
     width: '84%',
     height: '100%',
-    //backgroundColor: 'rgba(0, 0, 0, 0.7)',
     paddingTop: '320px',
     paddingBottom: '40px',
 }));
@@ -52,7 +51,7 @@ const AboutMeMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
                 <MobileImagesContainer>
                     <Image1Container>
-                        <img className="portfolio-mobile-img" src={portfolio} />
+                        <img className="about-mobile-img" src={daenerys3} />
                     </Image1Container>
                 </MobileImagesContainer>
 
@@ -71,7 +70,7 @@ const AboutMeMobile = ({ darkModeEnabled, setDarkModeEnabled }) => {
                             fontSize: '5.5rem',
                             lineHeight: '1',
                             color: darkModeEnabled ? colors.white : colors.black,
-                            mb: 3,
+                            mb: 3.5,
                         }}
                     >
                         About Me
