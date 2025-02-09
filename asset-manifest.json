@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.f292dfa6.css",
-    "main.js": "/kileys-portfolio/static/js/main.c5396cc2.js",
+    "main.css": "/kileys-portfolio/static/css/main.3d8525cc.css",
+    "main.js": "/kileys-portfolio/static/js/main.54670025.js",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/daenerys-3.jpg": "/kileys-portfolio/static/media/daenerys-3.24f70732076ae0dc67b8.jpg",
     "static/media/article8-preview.jpg": "/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
@@ -37,11 +37,11 @@
     "static/media/leaf-border-light.png": "/kileys-portfolio/static/media/leaf-border-light.bbaea2bcd2c3e3fe9277.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.f292dfa6.css.map": "/kileys-portfolio/static/css/main.f292dfa6.css.map",
-    "main.c5396cc2.js.map": "/kileys-portfolio/static/js/main.c5396cc2.js.map"
+    "main.3d8525cc.css.map": "/kileys-portfolio/static/css/main.3d8525cc.css.map",
+    "main.54670025.js.map": "/kileys-portfolio/static/js/main.54670025.js.map"
   },
   "entrypoints": [
-    "static/css/main.f292dfa6.css",
-    "static/js/main.c5396cc2.js"
+    "static/css/main.3d8525cc.css",
+    "static/js/main.54670025.js"
   ]
 }
