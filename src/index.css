@@ -174,7 +174,7 @@ body {
 /* ------------------- 4.5 Portfolio Page Images ------------------- */
 
 .portfolio-bg-img {
-    background-image: url('./images/mountain-bg-portfolio.png');
+    background-image: url('./images/mountain-bg.png');
     background-size: cover!important;
     background-position: center;
     background-attachment: fixed;
@@ -221,6 +221,11 @@ body {
 @media only screen and (max-width: 600px) {
 
     .bg-img {
+        height: 100%;
+    }
+
+    .portfolio-bg-img {
+        background-image: url('./images/mountain-bg-portfolio.png');
         height: 100%;
     }
 
@@ -456,12 +461,12 @@ body {
 
 .climatenews-text-stack {
     margin: 4rem 0 1.75rem 0;
-    padding: 0 2.5rem;
+    padding: 0 2.75rem;
 }
 
 .freelance-text-stack {
     margin: 4rem 0 1rem 0;
-    padding: 0 2.5rem;
+    padding: 0 2.75rem;
 }
 
 .portfolio-header {
@@ -470,6 +475,7 @@ body {
     font-size: 3rem!important;
     letter-spacing: 0em!important;
     margin-bottom: 0.375rem!important;
+    font-weight: 600!important;
 }
 
 .article-card {
