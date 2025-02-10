@@ -224,11 +224,8 @@ body {
         height: 100%;
     }
 
-    .portfolio-bg-img {
-        /* background-image: url('./images/mountain-bg-portfolio.png')!important;
-        background-position: bottom;
-        background-size: contain;
-        background-repeat: no-repeat; */
+    .portfolio-bg-img::before {
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
