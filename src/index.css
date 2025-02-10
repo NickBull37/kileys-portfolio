@@ -175,7 +175,7 @@ body {
 
 .portfolio-bg-img {
     background-image: url('./images/mountain-bg.png');
-    background-size: cover!important;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
@@ -226,8 +226,9 @@ body {
 
     .portfolio-bg-img {
         background-image: url('./images/mountain-bg-portfolio.png')!important;
-        height: 100%!important;
-        background-position: top!important;
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
