@@ -224,6 +224,10 @@ body {
         height: 100%;
     }
 
+    .portfolio-bg-img {
+        z-index: -2;
+    }
+
     .portfolio-bg-img::before {
         content: "";
         position: fixed;
