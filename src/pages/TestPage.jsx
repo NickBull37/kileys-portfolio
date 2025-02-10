@@ -10,14 +10,6 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import colors from '../utils/colors';
 
-const TransparentStack = styled(Stack)(() => ({
-    // position: 'static',
-    // display: 'flex',
-    // width: '80%',
-    // height: '100%',
-    // margin: 'auto'
-}));
-
 const ArticleCard = styled(Card)(() => ({
     display: 'flex',
     flexDirection: 'column',
@@ -317,7 +309,7 @@ const TestPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             <Stack
                 className='portfolio-transparent-stack'
                 sx={{
-                    backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.7)' : 'rgba(242, 242, 242, 0.65)',
+                    backgroundColor: darkModeEnabled ? 'rgba(0, 0, 0, 0.65)' : 'rgba(242, 242, 242, 0.65)',
                     boxShadow: darkModeEnabled
                         ? '0px -4px 4px -1px rgba(0, 0, 0, 0.6), 0px -4px 5px 0px rgba(0, 0, 0, 0.35), 0px -4px 6px 0px rgba(0, 0, 0, 0.50)'
                         : '0px -4px 4px -1px rgba(102, 102, 102, 0.6), 0px -4px 5px 0px rgba(102, 102, 102, 0.35), 0px -4px 6px 0px rgba(102, 102, 102, 0.50)',
@@ -326,8 +318,6 @@ const TestPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
 
                 <Stack
                     display="flex"
-                    sx={{
-                    }}
                 >
                     <Stack
                         className='climatenews-text-stack'
