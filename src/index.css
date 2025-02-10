@@ -230,9 +230,10 @@ body {
         background-size: contain;
         background-repeat: no-repeat; */
         background-image: url('./images/mountain-bg-portfolio.png');
+        background-size: auto;
         background-position: center;
-        background-size: cover;
         background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 }
 
@@ -549,7 +550,7 @@ body {
     }
 
     .climatenews-text-stack {
-        margin: 3rem 0 2rem 0;
+        margin: 2.75rem 0 2rem 0;
         padding: 0;
     }
 
