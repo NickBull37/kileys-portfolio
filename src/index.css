@@ -238,10 +238,11 @@ body {
         background: url('./images/mountain-bg-portfolio.png') no-repeat center center;
         background-size: cover;
         z-index: -1;
+        height: 100vh;
 
         /* Fix zooming effect */
-        transform: translateZ(0);
-        will-change: transform;
+        /* transform: translateZ(0);
+        will-change: transform; */
     }
 }
 
