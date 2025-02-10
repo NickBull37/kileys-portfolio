@@ -225,7 +225,7 @@ body {
     }
 
     .portfolio-bg-img {
-        display: "none"!important;
+        background: none;
     }
 
     .portfolio-bg-img::before {
