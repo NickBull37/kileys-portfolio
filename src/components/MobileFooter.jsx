@@ -1,9 +1,10 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
-import { Box, Stack, Button, Typography } from '@mui/material';
+import { Box, Stack, Button, Typography, Tooltip } from '@mui/material';
 import { kpLogoDarkTrans, kpLogoLightTrans } from '../utils/constants';
 import colors from '../utils/colors';
+import PetsIcon from '@mui/icons-material/Pets';
 
 const FooterLink = styled(Typography)(() => ({
     fontSize: '0.875rem',
@@ -34,6 +35,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
     return (
         <Stack
             sx={{
+                display: { xs: 'flex', md: 'none' },
                 position: 'relative',
                 zIndex: 1000,
                 bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav2,
@@ -42,11 +44,9 @@ const MobileFooter = ({ darkModeEnabled }) => {
             }}
         >
             <Box
+                display="flex"
                 justifyContent="space-evenly"
                 gap={3}
-                sx={{
-                    display: { xs: 'flex', md: 'none' },
-                }}
             >
                 <FooterColumn>
                     <LinkBtn>
@@ -104,7 +104,6 @@ const MobileFooter = ({ darkModeEnabled }) => {
             <Box
                 justifyContent="center"
                 alignItems="center"
-                gap={1.25}
                 sx={{
                     display: darkModeEnabled ? 'flex' : 'none',
                     mt: '2rem',
@@ -120,14 +119,33 @@ const MobileFooter = ({ darkModeEnabled }) => {
                         color: darkModeEnabled ? colors.gray70 : colors.black,
                     }}
                 >
-                    Copyright © KileyPrice.com
+                    Copyright
+                </CopyrightText>
+                <Tooltip title={<PetsIcon sx={{ fontSize: 20 }} />}>
+                    <CopyrightText
+                        sx={{
+                            color: darkModeEnabled ? colors.gray70 : colors.black,
+                            mx: '4px',
+                            '&:hover': {
+                                cursor: 'pointer',
+                            },
+                        }}
+                    >
+                        ©
+                    </CopyrightText>
+                </Tooltip>
+                <CopyrightText
+                    sx={{
+                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                    }}
+                >
+                    KileyPrice.com
                 </CopyrightText>
             </Box>
 
             <Box
                 justifyContent="center"
                 alignItems="center"
-                gap={1.25}
                 sx={{
                     display: darkModeEnabled ? 'none' : 'flex',
                     mt: '2rem',
@@ -143,7 +161,27 @@ const MobileFooter = ({ darkModeEnabled }) => {
                         color: darkModeEnabled ? colors.gray70 : colors.black,
                     }}
                 >
-                    Copyright © KileyPrice.com
+                    Copyright
+                </CopyrightText>
+                <Tooltip title={<PetsIcon sx={{ fontSize: 20 }} />}>
+                    <CopyrightText
+                        sx={{
+                            color: darkModeEnabled ? colors.gray70 : colors.black,
+                            mx: '4px',
+                            '&:hover': {
+                                cursor: 'pointer',
+                            },
+                        }}
+                    >
+                        ©
+                    </CopyrightText>
+                </Tooltip>
+                <CopyrightText
+                    sx={{
+                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                    }}
+                >
+                    KileyPrice.com
                 </CopyrightText>
             </Box>
         </Stack>
