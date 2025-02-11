@@ -3,7 +3,7 @@ const colors = {
     lightModeBg: "#cccccc",
     lightModePage: "#e6e6e6",
     lightModeNav: "#e6e6e6",
-    lightModeNav2: "#d9d9d9",
+    lightModeFooter: "#d9d9d9",
 
     darkModeBg: "#262626",
     darkModePage: "#404040",

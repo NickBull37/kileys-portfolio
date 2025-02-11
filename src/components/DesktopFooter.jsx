@@ -32,7 +32,7 @@ const DesktopFooter = ({ darkModeEnabled }) => {
                 display: { xs: 'none', md: 'flex' },
                 flexDirection: 'row',
                 py: '1.375rem',
-                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav,
+                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeFooter,
                 borderTop: '1px solid #000',
             }}
         >
