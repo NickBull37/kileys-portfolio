@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kileys-portfolio/static/css/main.ee5b83a8.css",
-    "main.js": "/kileys-portfolio/static/js/main.97022f51.js",
+    "main.js": "/kileys-portfolio/static/js/main.2cfa62b4.js",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/daenerys-3.jpg": "/kileys-portfolio/static/media/daenerys-3.24f70732076ae0dc67b8.jpg",
     "static/media/article8-preview.jpg": "/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
@@ -31,19 +31,19 @@
     "static/media/article12-preview.png": "/kileys-portfolio/static/media/article12-preview.88f1989fc54217445594.png",
     "static/media/article14-preview.png": "/kileys-portfolio/static/media/article14-preview.97ee0e084dfb3c6abcdd.png",
     "static/media/slate.png": "/kileys-portfolio/static/media/slate.88c6378872ae2573deb9.png",
-    "static/media/custom-border-light.png": "/kileys-portfolio/static/media/custom-border-light.56100baca7c3511207f1.png",
+    "static/media/circuit-border-light.png": "/kileys-portfolio/static/media/circuit-border-light.56100baca7c3511207f1.png",
     "static/media/article11-preview.png": "/kileys-portfolio/static/media/article11-preview.46aa958ffdabd17412eb.png",
     "static/media/leaf-border-dark.png": "/kileys-portfolio/static/media/leaf-border-dark.ba6f62ee0fdfffb8ffa2.png",
-    "static/media/custom-border-dark.png": "/kileys-portfolio/static/media/custom-border-dark.30d0ac26302657e0c18b.png",
+    "static/media/circuit-border-dark.png": "/kileys-portfolio/static/media/circuit-border-dark.30d0ac26302657e0c18b.png",
     "static/media/mongabay-dark.png": "/kileys-portfolio/static/media/mongabay-dark.0837ced13898447bf2bd.png",
     "static/media/leaf-border-light.png": "/kileys-portfolio/static/media/leaf-border-light.bbaea2bcd2c3e3fe9277.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
     "main.ee5b83a8.css.map": "/kileys-portfolio/static/css/main.ee5b83a8.css.map",
-    "main.97022f51.js.map": "/kileys-portfolio/static/js/main.97022f51.js.map"
+    "main.2cfa62b4.js.map": "/kileys-portfolio/static/js/main.2cfa62b4.js.map"
   },
   "entrypoints": [
     "static/css/main.ee5b83a8.css",
-    "static/js/main.97022f51.js"
+    "static/js/main.2cfa62b4.js"
   ]
 }
