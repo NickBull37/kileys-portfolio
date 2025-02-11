@@ -70,6 +70,24 @@ const Image2Container = styled(Box)(() => ({
     },
 }));
 
+const MobileImage1Container = styled(Box)(() => ({
+    display: 'flex',
+    position: 'relative',
+    borderRadius: '12px',
+    boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
+    transform: 'rotate(-12deg)',
+    zIndex: '1',
+}));
+
+const MobileImage2Container = styled(Box)(() => ({
+    display: 'flex',
+    position: 'relative',
+    borderRadius: '12px',
+    boxShadow: '0px 3px 5px 1px rgba(0, 0, 0, 0.6), 0px 4px 5px 0px rgba(0, 0, 0, 0.28), 0px 1px 12px 1px rgba(0, 0, 0, 0.4)',
+    transform: 'rotate(8deg) translateX(-10px)',
+    zIndex: '2',
+}));
+
 const TextStack = styled(Stack)(() => ({
     position: 'static',
     display: 'flex',
@@ -151,12 +169,12 @@ const HomePage = ({ darkModeEnabled, setDarkModeEnabled }) => {
             <MobileLandingContainer>
 
                 <MobileImagesContainer>
-                    <Image1Container>
+                    <MobileImage1Container>
                         <img className="homepage-img" src={daenerys} />
-                    </Image1Container>
-                    <Image2Container>
+                    </MobileImage1Container>
+                    <MobileImage2Container>
                         <img className="homepage-img" src={daenerys2} />
-                    </Image2Container>
+                    </MobileImage2Container>
                 </MobileImagesContainer>
 
                 <MobileTextStack

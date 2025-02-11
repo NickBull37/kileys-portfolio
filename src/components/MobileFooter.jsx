@@ -1,75 +1,150 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Stack, Button, Typography } from '@mui/material';
+import { kpLogoDarkTrans, kpLogoLightTrans } from '../utils/constants';
 import colors from '../utils/colors';
 
 const FooterLink = styled(Typography)(() => ({
-    borderBottom: '1px solid #999999',
+    fontSize: '0.875rem',
+    lineHeight: '1.5',
+    letterSpacing: '0px',
+    fontFamily: '"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+}));
+
+const CopyrightText = styled(Typography)(() => ({
+    fontSize: '0.875rem',
+    lineHeight: '1.5',
+    letterSpacing: '0px',
+    fontFamily: '"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+}));
+
+const FooterColumn = styled(Stack)(() => ({
+    gap: '1rem',
+    alignItems: 'flex-start'
+}));
+
+const LinkBtn = styled(Button)(() => ({
+    padding: '0',
+    margin: '0',
+    justifyContent: 'flex-start'
 }));
 
 const MobileFooter = ({ darkModeEnabled }) => {
     return (
-        <Box
-            justifyContent="center"
-            gap={3}
+        <Stack
             sx={{
-                display: { xs: 'flex', md: 'none' },
-                flexDirection: 'column',
-                py: '2rem',
                 bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav,
                 borderTop: '1px solid #000',
+                py: '1.75rem',
             }}
         >
-            <Button>
-                <Link to="/">
-                    <FooterLink
-                        variant='body2'
-                        sx={{
-                            color: darkModeEnabled ? colors.white : colors.black,
-                        }}
-                    >
-                        Home
-                    </FooterLink>
-                </Link>
-            </Button>
-            <Button>
-                <Link to="/about-me-mobile">
-                    <FooterLink
-                        variant='body2'
-                        sx={{
-                            color: darkModeEnabled ? colors.white : colors.black,
-                        }}
-                    >
-                        About Me
-                    </FooterLink>
-                </Link>
-            </Button>
-            <Button>
-                <Link to="/written-work">
-                    <FooterLink
-                        variant='body2'
-                        sx={{
-                            color: darkModeEnabled ? colors.white : colors.black,
-                        }}
-                    >
-                        Written Work
-                    </FooterLink>
-                </Link>
-            </Button>
-            <Button>
-                <Link to="/contact-mobile">
-                    <FooterLink
-                        variant='body2'
-                        sx={{
-                            color: darkModeEnabled ? colors.white : colors.black,
-                        }}
-                    >
-                        Contact
-                    </FooterLink>
-                </Link>
-            </Button>
-        </Box>
+            <Box
+                justifyContent="space-evenly"
+                gap={3}
+                sx={{
+                    display: { xs: 'flex', md: 'none' },
+                }}
+            >
+                <FooterColumn>
+                    <LinkBtn>
+                        <Link to="/">
+                            <FooterLink
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray70 : colors.black,
+                                }}
+                            >
+                                Home
+                            </FooterLink>
+                        </Link>
+                    </LinkBtn>
+                    <LinkBtn>
+                        <Link to="/about-me-mobile">
+                            <FooterLink
+                                variant='body2'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray70 : colors.black,
+                                }}
+                            >
+                                About Me
+                            </FooterLink>
+                        </Link>
+                    </LinkBtn>
+                </FooterColumn>
+                <FooterColumn>
+                    <LinkBtn>
+                        <Link to="/written-work">
+                            <FooterLink
+                                variant='body2'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray70 : colors.black,
+                                }}
+                            >
+                                My Portfolio
+                            </FooterLink>
+                        </Link>
+                    </LinkBtn>
+                    <LinkBtn>
+                        <Link to="/contact-mobile">
+                            <FooterLink
+                                variant='body2'
+                                sx={{
+                                    color: darkModeEnabled ? colors.gray70 : colors.black,
+                                }}
+                            >
+                                Contact
+                            </FooterLink>
+                        </Link>
+                    </LinkBtn>
+                </FooterColumn>
+            </Box>
+
+            <Box
+                justifyContent="center"
+                alignItems="center"
+                gap={1.25}
+                sx={{
+                    display: darkModeEnabled ? 'flex' : 'none',
+                    mt: '2rem',
+                    mb: '0.5rem',
+                    mx: '2rem',
+                    pt: '1.5rem',
+                    borderTop: '1px solid #666666'
+                }}
+            >
+                <img className="footer-logo" src={kpLogoDarkTrans} />
+                <CopyrightText
+                    sx={{
+                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                    }}
+                >
+                    Copyright © KileyPrice.com
+                </CopyrightText>
+            </Box>
+
+            <Box
+                justifyContent="center"
+                alignItems="center"
+                gap={1.25}
+                sx={{
+                    display: darkModeEnabled ? 'none' : 'flex',
+                    mt: '2rem',
+                    mb: '0.5rem',
+                    mx: '2rem',
+                    pt: '1.5rem',
+                    borderTop: '1px solid #666666'
+                }}
+            >
+                <img className="footer-logo" src={kpLogoLightTrans} />
+                <CopyrightText
+                    sx={{
+                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                    }}
+                >
+                    Copyright © KileyPrice.com
+                </CopyrightText>
+            </Box>
+        </Stack>
     );
 }
 
