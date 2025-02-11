@@ -34,7 +34,9 @@ const MobileFooter = ({ darkModeEnabled }) => {
     return (
         <Stack
             sx={{
-                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav,
+                position: 'relative',
+                zIndex: 1000,
+                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav2,
                 borderTop: '1px solid #000',
                 py: '1.75rem',
             }}

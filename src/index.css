@@ -140,7 +140,6 @@ body {
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    margin-top: 1px;
 }
 
 .custom-border-img {
@@ -558,7 +557,7 @@ body {
     .portfolio-transparent-stack {
         position: static;
         display: flex;
-        width: 86%;
+        width: 88%;
         height: 100%;
     }
 

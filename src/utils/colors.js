@@ -1,8 +1,9 @@
 const colors = {
 
     lightModeBg: "#cccccc",
-    lightModePage: "#f2f2f2",
-    lightModeNav: "#e6e6e6",
+    lightModePage: "#e6e6e6",
+    lightModeNav: "#cccccc",
+    lightModeNav2: "#bfbfbf",
 
     darkModeBg: "#262626",
     darkModePage: "#404040",
