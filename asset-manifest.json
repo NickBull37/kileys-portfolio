@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kileys-portfolio/static/css/main.ee5b83a8.css",
-    "main.js": "/kileys-portfolio/static/js/main.2cfa62b4.js",
+    "main.js": "/kileys-portfolio/static/js/main.fa01e156.js",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/daenerys-3.jpg": "/kileys-portfolio/static/media/daenerys-3.24f70732076ae0dc67b8.jpg",
     "static/media/article8-preview.jpg": "/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
@@ -40,10 +40,10 @@
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
     "main.ee5b83a8.css.map": "/kileys-portfolio/static/css/main.ee5b83a8.css.map",
-    "main.2cfa62b4.js.map": "/kileys-portfolio/static/js/main.2cfa62b4.js.map"
+    "main.fa01e156.js.map": "/kileys-portfolio/static/js/main.fa01e156.js.map"
   },
   "entrypoints": [
     "static/css/main.ee5b83a8.css",
-    "static/js/main.2cfa62b4.js"
+    "static/js/main.fa01e156.js"
   ]
 }
