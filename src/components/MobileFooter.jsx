@@ -38,7 +38,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 display: { xs: 'flex', md: 'none' },
                 position: 'relative',
                 zIndex: 1000,
-                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeNav2,
+                bgcolor: darkModeEnabled ? colors.darkModeNav : colors.lightModeFooter,
                 borderTop: '1px solid #000',
                 py: '1.75rem',
             }}
