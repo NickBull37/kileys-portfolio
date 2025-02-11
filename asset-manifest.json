@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.f26653d6.css",
-    "main.js": "/kileys-portfolio/static/js/main.8288eed5.js",
+    "main.css": "/kileys-portfolio/static/css/main.4919e70a.css",
+    "main.js": "/kileys-portfolio/static/js/main.d81fdd6c.js",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/daenerys-3.jpg": "/kileys-portfolio/static/media/daenerys-3.24f70732076ae0dc67b8.jpg",
     "static/media/article8-preview.jpg": "/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
@@ -24,10 +24,10 @@
     "static/media/feel-free.ttf": "/kileys-portfolio/static/media/feel-free.861a9255c95fc2cb6e87.ttf",
     "static/media/daenerys-2.png": "/kileys-portfolio/static/media/daenerys-2.4131dc6507a2b7717ec6.png",
     "static/media/article10-preview.png": "/kileys-portfolio/static/media/article10-preview.447b1435f657ded495bd.png",
-    "static/media/kp-logo-dark.png": "/kileys-portfolio/static/media/kp-logo-dark.21a20b45f77647a89802.png",
+    "static/media/kp-logo-dark.png": "/kileys-portfolio/static/media/kp-logo-dark.cbd0c0c13b086d056be9.png",
     "static/media/article15-preview.png": "/kileys-portfolio/static/media/article15-preview.f2e021bb955e97fa58bd.png",
     "static/media/mongabay-light.jpg": "/kileys-portfolio/static/media/mongabay-light.3cb20cce20f1cdffd460.jpg",
-    "static/media/kp-logo-light.png": "/kileys-portfolio/static/media/kp-logo-light.cb23def7a8e76e1f341e.png",
+    "static/media/kp-logo-light.png": "/kileys-portfolio/static/media/kp-logo-light.6fe61c3765d76a32a3ce.png",
     "static/media/article12-preview.png": "/kileys-portfolio/static/media/article12-preview.88f1989fc54217445594.png",
     "static/media/article14-preview.png": "/kileys-portfolio/static/media/article14-preview.97ee0e084dfb3c6abcdd.png",
     "static/media/slate.png": "/kileys-portfolio/static/media/slate.88c6378872ae2573deb9.png",
@@ -39,11 +39,11 @@
     "static/media/leaf-border-light.png": "/kileys-portfolio/static/media/leaf-border-light.bbaea2bcd2c3e3fe9277.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.f26653d6.css.map": "/kileys-portfolio/static/css/main.f26653d6.css.map",
-    "main.8288eed5.js.map": "/kileys-portfolio/static/js/main.8288eed5.js.map"
+    "main.4919e70a.css.map": "/kileys-portfolio/static/css/main.4919e70a.css.map",
+    "main.d81fdd6c.js.map": "/kileys-portfolio/static/js/main.d81fdd6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f26653d6.css",
-    "static/js/main.8288eed5.js"
+    "static/css/main.4919e70a.css",
+    "static/js/main.d81fdd6c.js"
   ]
 }
