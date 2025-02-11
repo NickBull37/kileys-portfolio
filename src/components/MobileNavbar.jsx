@@ -105,14 +105,7 @@ const MobileNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                 <MenuItem key={'written-work'} onClick={handleCloseNavMenu}>
                                     <Link to="/written-work">
                                         <Typography textAlign="center">
-                                            Written Work
-                                        </Typography>
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem key={'test'} onClick={handleCloseNavMenu}>
-                                    <Link to="/test">
-                                        <Typography textAlign="center">
-                                            Test
+                                            My Portfolio
                                         </Typography>
                                     </Link>
                                 </MenuItem>

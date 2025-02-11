@@ -19,7 +19,7 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
         <Box
             justifyContent="flex-end"
             alignItems="center"
-            gap={2}
+            gap={4}
             sx={{
                 position: 'relative',
                 display: { xs: 'none', md: 'flex' },
@@ -52,6 +52,17 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                     </Tooltip>
                 </Link>
             </LogoContainer>
+
+            <Button
+                sx={{
+                    color: darkModeEnabled ? colors.white : colors.black,
+                    fontSize: '0.875rem',
+                }}
+            >
+                <Link to="/">
+                    Home
+                </Link>
+            </Button>
             
             <Button
                 sx={{
@@ -69,17 +80,7 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
                 }}
             >
                 <Link to="/written-work">
-                    Written Work
-                </Link>
-            </Button>
-            
-            <Button
-                sx={{
-                    color: darkModeEnabled ? colors.white : colors.black,
-                }}
-            >
-                <Link to="/written-work-2">
-                    Portfolio
+                    My Portfolio
                 </Link>
             </Button>
 
@@ -90,16 +91,6 @@ const DesktopNavbar = ({ darkModeEnabled, setDarkModeEnabled }) => {
             >
                 <Link to="/contact">
                     Contact
-                </Link>
-            </Button>
-
-            <Button
-                sx={{
-                    color: darkModeEnabled ? colors.white : colors.black,
-                }}
-            >
-                <Link to="/test">
-                    Test
                 </Link>
             </Button>
 

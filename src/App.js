@@ -18,12 +18,9 @@ const App = () => {
                 <Route path="/about-me-mobile" element={<AboutMeMobile darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
 
                 <Route path="/written-work" element={<WrittenWorkPage darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
-                <Route path="/written-work-2" element={<WrittenWorkPage2 darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
 
                 <Route path="/contact" element={<ContactPage darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
                 <Route path="/contact-mobile" element={<ContactMobile darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
-
-                <Route path="/test" element={<TestPage darkModeEnabled={darkModeEnabled} setDarkModeEnabled={setDarkModeEnabled} />} />
             </Routes>
         </Box>
     );
