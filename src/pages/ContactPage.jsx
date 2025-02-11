@@ -2,7 +2,7 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography } from '@mui/material';
 import { DesktopNavbar, MobileNavbar, DesktopFooter } from '../components/index';
-import { contact, borderImgDark, borderImgLight } from '../utils/constants';
+import { contact, circuitBorderDark, circuitBorderLight } from '../utils/constants';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -71,14 +71,14 @@ const ContactPage = ({ darkModeEnabled, setDarkModeEnabled }) => {
                                     display: darkModeEnabled ? 'block' : 'none'
                                 }}
                             >
-                                <img className="custom-border-img" src={borderImgDark} />
+                                <img className="custom-border-img" src={circuitBorderDark} />
                             </BorderImageContainer>
                             <BorderImageContainer
                                 sx={{
                                     display: darkModeEnabled ? 'none' : 'block'
                                 }}
                             >
-                                <img className="custom-border-img" src={borderImgLight} />
+                                <img className="custom-border-img" src={circuitBorderLight} />
                             </BorderImageContainer>
                         </ImageBox>
 
