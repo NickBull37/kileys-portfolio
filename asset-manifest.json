@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kileys-portfolio/static/css/main.d90824a4.css",
-    "main.js": "/kileys-portfolio/static/js/main.6352fb41.js",
+    "main.css": "/kileys-portfolio/static/css/main.9a518d49.css",
+    "main.js": "/kileys-portfolio/static/js/main.ebe8e610.js",
     "static/media/daenerys.png": "/kileys-portfolio/static/media/daenerys.f47c6fdb00b59cb84c29.png",
     "static/media/daenerys-3.jpg": "/kileys-portfolio/static/media/daenerys-3.24f70732076ae0dc67b8.jpg",
     "static/media/article8-preview.jpg": "/kileys-portfolio/static/media/article8-preview.e450b3d2a0be2e2a2eaf.jpg",
@@ -16,12 +16,13 @@
     "static/media/article16-preview.jpg": "/kileys-portfolio/static/media/article16-preview.d177a58e065ff38c021f.jpg",
     "static/media/article5-preview.jpg": "/kileys-portfolio/static/media/article5-preview.f7ad1e445de73a66fa1a.jpg",
     "static/media/article1-preview.jpg": "/kileys-portfolio/static/media/article1-preview.fd555a6d4170f6a8f2b5.jpg",
-    "static/media/mountain-bg-portfolio.png": "/kileys-portfolio/static/media/mountain-bg-portfolio.b3ace8e5ec79f81aaf38.png",
+    "static/media/kp-logo-dark-trans.png": "/kileys-portfolio/static/media/kp-logo-dark-trans.2037d5c497d957867a1f.png",
+    "static/media/mountain-bg-test.png": "/kileys-portfolio/static/media/mountain-bg-test.ab1424fa111f763c9fd6.png",
     "static/media/article13-preview.jpg": "/kileys-portfolio/static/media/article13-preview.c9e50ebefdaa298ddd56.jpg",
+    "static/media/kp-logo-light-trans.png": "/kileys-portfolio/static/media/kp-logo-light-trans.70b50e8dbafbd8ba32db.png",
     "static/media/contact.png": "/kileys-portfolio/static/media/contact.37e35841eba82352865a.png",
     "static/media/feel-free.ttf": "/kileys-portfolio/static/media/feel-free.861a9255c95fc2cb6e87.ttf",
     "static/media/daenerys-2.png": "/kileys-portfolio/static/media/daenerys-2.4131dc6507a2b7717ec6.png",
-    "static/media/email.png": "/kileys-portfolio/static/media/email.0296f8407570ef1b32bf.png",
     "static/media/article10-preview.png": "/kileys-portfolio/static/media/article10-preview.447b1435f657ded495bd.png",
     "static/media/kp-logo-dark.png": "/kileys-portfolio/static/media/kp-logo-dark.21a20b45f77647a89802.png",
     "static/media/article15-preview.png": "/kileys-portfolio/static/media/article15-preview.f2e021bb955e97fa58bd.png",
@@ -38,11 +39,11 @@
     "static/media/leaf-border-light.png": "/kileys-portfolio/static/media/leaf-border-light.bbaea2bcd2c3e3fe9277.png",
     "static/media/time.png": "/kileys-portfolio/static/media/time.9f539beebbafbb0ac7e5.png",
     "index.html": "/kileys-portfolio/index.html",
-    "main.d90824a4.css.map": "/kileys-portfolio/static/css/main.d90824a4.css.map",
-    "main.6352fb41.js.map": "/kileys-portfolio/static/js/main.6352fb41.js.map"
+    "main.9a518d49.css.map": "/kileys-portfolio/static/css/main.9a518d49.css.map",
+    "main.ebe8e610.js.map": "/kileys-portfolio/static/js/main.ebe8e610.js.map"
   },
   "entrypoints": [
-    "static/css/main.d90824a4.css",
-    "static/js/main.6352fb41.js"
+    "static/css/main.9a518d49.css",
+    "static/js/main.ebe8e610.js"
   ]
 }
