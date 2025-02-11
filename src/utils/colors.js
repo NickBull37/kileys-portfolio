@@ -2,12 +2,12 @@ const colors = {
 
     lightModeBg: "#cccccc",
     lightModePage: "#e6e6e6",
-    lightModeNav: "#cccccc",
-    lightModeNav2: "#bfbfbf",
+    lightModeNav: "#e6e6e6",
+    lightModeNav2: "#d9d9d9",
 
     darkModeBg: "#262626",
     darkModePage: "#404040",
-    darkModeNav: "#1a1a1a",
+    darkModeNav: "#262626",
 
     white: "#ffffff",
     gray95: "#f2f2f2",
