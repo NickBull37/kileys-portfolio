@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from "react";
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
-import { Box, Stack, Button, Typography, Tooltip } from '@mui/material';
+import { Box, Stack, Button, Typography, Tooltip, Backdrop } from '@mui/material';
 import { kpLogoDarkTrans, kpLogoLightTrans } from '../utils/constants';
+import { boxcat } from '../utils/constants';
 import colors from '../utils/colors';
 import PetsIcon from '@mui/icons-material/Pets';
+import Confetti from "react-confetti";
 
 const FooterLink = styled(Typography)(() => ({
     fontSize: '0.875rem',
@@ -32,6 +34,20 @@ const LinkBtn = styled(Button)(() => ({
 }));
 
 const MobileFooter = ({ darkModeEnabled }) => {
+
+    const [backdropOpen, setBackdropOpen] = useState(false);
+    const [showConfetti, setShowConfetti] = useState(false);
+
+    const handleOpenBackdrop = () => {
+        setBackdropOpen(true);
+        setShowConfetti(true);
+    };
+
+    const handleCloseBackdrop = () => {
+        setBackdropOpen(false);
+        setShowConfetti(false);
+    };
+
     return (
         <Stack
             sx={{
@@ -123,6 +139,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 </CopyrightText>
                 <Tooltip title={<PetsIcon sx={{ fontSize: 20 }} />}>
                     <CopyrightText
+                        onClick={handleOpenBackdrop}
                         sx={{
                             color: colors.white,
                             mx: '4px',
@@ -165,6 +182,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 </CopyrightText>
                 <Tooltip title={<PetsIcon sx={{ fontSize: 20 }} />}>
                     <CopyrightText
+                        onClick={handleOpenBackdrop}
                         sx={{
                             color: colors.black,
                             mx: '4px',
@@ -184,6 +202,36 @@ const MobileFooter = ({ darkModeEnabled }) => {
                     KileyPrice.com
                 </CopyrightText>
             </Box>
+
+            <Backdrop
+                sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })}
+                open={backdropOpen}
+                onClick={handleCloseBackdrop}
+            >
+                <Stack
+                    alignItems="center"
+                    sx={{
+                        bgcolor: '#fff',
+                        borderRadius: '40px',
+                        pt: '2rem'
+                    }}
+                >
+                    <Typography
+                        className='feel-free'
+                        sx={{
+                            color: '#050E73',
+                            fontSize: '2.25rem',
+                        }}
+                    >
+                        Hooray! You found the cat!!!
+                    </Typography>
+                    <img className="boxcat-img" src={boxcat} />
+                </Stack>
+
+                <div>
+                    {showConfetti && <Confetti />}
+                </div>
+            </Backdrop>
         </Stack>
     );
 }

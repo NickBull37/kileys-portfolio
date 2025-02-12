@@ -147,6 +147,11 @@ body {
     height: 100%;
 }
 
+.boxcat-img {
+    height: 450px;
+    border-radius: 80px;
+}
+
 /* ------------------- 4.2 Homepage Images ------------------- */
 .homepage-img {
     max-height: 450px;
@@ -230,6 +235,11 @@ body {
 
     .bg-img {
         height: 100%;
+    }
+
+    .boxcat-img {
+        height: 220px;
+        border-radius: 40px;
     }
 
     .portfolio-bg-img {

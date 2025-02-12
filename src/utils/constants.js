@@ -53,3 +53,6 @@ export const linkedInIcon = <i className="fa-brands fa-linkedin"></i>;
 export const facebookIcon = <i class="bi bi-facebook"></i>;
 export const discordIcon = <i class="bi bi-discord"></i>;
 export const twitterIcon = <i class="bi bi-twitter-x"></i>;
+
+// Cats
+export const boxcat = require('../images/boxcat-tp.jpg');
