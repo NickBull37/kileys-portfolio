@@ -116,7 +116,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 <img className="footer-logo" src={kpLogoDarkTrans} />
                 <CopyrightText
                     sx={{
-                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                        color: colors.gray70
                     }}
                 >
                     Copyright
@@ -124,7 +124,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 <Tooltip title={<PetsIcon sx={{ fontSize: 20 }} />}>
                     <CopyrightText
                         sx={{
-                            color: darkModeEnabled ? colors.gray70 : colors.black,
+                            color: colors.white,
                             mx: '4px',
                             '&:hover': {
                                 cursor: 'pointer',
@@ -136,7 +136,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 </Tooltip>
                 <CopyrightText
                     sx={{
-                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                        color: colors.gray70
                     }}
                 >
                     KileyPrice.com
@@ -158,7 +158,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 <img className="footer-logo" src={kpLogoLightTrans} />
                 <CopyrightText
                     sx={{
-                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                        color: colors.gray10,
                     }}
                 >
                     Copyright
@@ -166,7 +166,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 <Tooltip title={<PetsIcon sx={{ fontSize: 20 }} />}>
                     <CopyrightText
                         sx={{
-                            color: darkModeEnabled ? colors.gray70 : colors.black,
+                            color: colors.black,
                             mx: '4px',
                             '&:hover': {
                                 cursor: 'pointer',
@@ -178,7 +178,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                 </Tooltip>
                 <CopyrightText
                     sx={{
-                        color: darkModeEnabled ? colors.gray70 : colors.black,
+                        color: colors.gray10,
                     }}
                 >
                     KileyPrice.com
