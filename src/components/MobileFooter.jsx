@@ -216,7 +216,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                         pt: '2rem'
                     }}
                 >
-                    <Typography
+                    {/* <Typography
                         className='feel-free'
                         sx={{
                             color: '#050E73',
@@ -224,7 +224,7 @@ const MobileFooter = ({ darkModeEnabled }) => {
                         }}
                     >
                         Hooray! You found the cat!!!
-                    </Typography>
+                    </Typography> */}
                     <img className="boxcat-img" src={boxcat} />
                 </Stack>
 

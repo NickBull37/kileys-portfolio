@@ -1,5 +1,4 @@
-# KileyPrice.com
-
+# Kiley's Portfolio
 This is a portfolio website for Kiley Price.
 
 ## Available Scripts
